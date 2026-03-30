@@ -1,0 +1,42 @@
+// swift-tools-version: 6.0
+import PackageDescription
+import AppleProductTypes
+
+let package = Package(
+    name: "Flourish_Face",
+    platforms: [
+        .iOS("18.0")
+    ],
+    products: [
+        .iOSApplication(
+            name: "Flourish_Face",
+            targets: ["AppModule"],
+            bundleIdentifier: "com.jh.Flourish-Face",
+            teamIdentifier: "3DFKU6DVCR",
+            displayVersion: "1.0",
+            bundleVersion: "1",
+            appIcon: .asset("AppIcon"),
+            accentColor: .presetColor(.green),
+            supportedDeviceFamilies: [
+                .pad,
+                .phone
+            ],
+            supportedInterfaceOrientations: [
+                .portrait,
+                .landscapeRight,
+                .landscapeLeft,
+                .portraitUpsideDown(.when(deviceFamilies: [.pad]))
+            ],
+            additionalInfoPlistContentFilePath: "Resources/Info.plist"
+        )
+    ],
+    targets: [
+        .executableTarget(
+            name: "AppModule",
+            path: ".",
+            swiftSettings: [
+                .swiftLanguageMode(.v5)
+            ]
+        )
+    ]
+)
