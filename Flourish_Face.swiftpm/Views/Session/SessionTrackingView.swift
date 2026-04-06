@@ -20,9 +20,9 @@ struct SessionTrackingView: View {
             return "Hold it! \(String(format: "%.1f", manager.aboveThresholdDuration))s"
         }
         switch manager.growthRate {
-        case 0..<0.3: return "Keep going..."
-        case 0.3..<0.5: return "Almost there!"
-        default: return "Hold that pose!"
+        case 0..<0.3: return String(localized: "Keep going...")
+        case 0.3..<0.5: return String(localized: "Almost there!")
+        default: return String(localized: "Hold that pose!")
         }
     }
 

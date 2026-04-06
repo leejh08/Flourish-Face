@@ -204,10 +204,10 @@ struct LogSettingsCard: View {
 
     private func sideDisplayName(_ side: AffectedSide) -> String {
         switch side {
-        case .left: return "Left"
-        case .right: return "Right"
-        case .central: return "Lower"
-        case .none: return "None"
+        case .left: return String(localized: "Left")
+        case .right: return String(localized: "Right")
+        case .central: return String(localized: "Lower")
+        case .none: return String(localized: "None")
         }
     }
 

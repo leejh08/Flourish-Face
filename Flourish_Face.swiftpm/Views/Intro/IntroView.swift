@@ -109,16 +109,16 @@ struct IntroView: View {
             }
             startAnimation()
             DispatchQueue.main.asyncAfter(deadline: .now() + Delay.sheetTransition) {
-                UIAccessibility.post(notification: .announcement, argument: "Some days, it's hard to look in the mirror.")
+                UIAccessibility.post(notification: .announcement, argument: String(localized: "Some days, it's hard\nto look in the mirror."))
             }
         }
         .onChange(of: phase) { _, newPhase in
             let text: String
             let delay: Double
             switch newPhase {
-            case 1: text = "When your own smile feels out of reach."; delay = 0.5
-            case 2: text = "But healing begins with one small movement."; delay = 2.0
-            case 3: text = "Flourish"; delay = 1.0
+            case 1: text = String(localized: "When your own smile\nfeels out of reach."); delay = 0.5
+            case 2: text = String(localized: "But healing begins\nwith one small movement."); delay = 2.0
+            case 3: text = String(localized: "Flourish"); delay = 1.0
             default: return
             }
             DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
