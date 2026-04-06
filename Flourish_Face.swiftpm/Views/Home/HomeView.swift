@@ -26,21 +26,21 @@ struct HomeView: View {
 
         switch weekday {
         case 2:
-            return ("Every smile starts with hope.", "Consistency is the key.\nYou're doing amazing!")
+            return (String(localized: "Every smile starts with hope."), String(localized: "Consistency is the key.\nYou're doing amazing!"))
         case 3:
-            return ("Healing is a journey, not a race.", "One step closer to your goals.\nTime to rest now.")
+            return (String(localized: "Healing is a journey, not a race."), String(localized: "One step closer to your goals.\nTime to rest now."))
         case 4:
-            return ("Your strength shines through.", "Every effort builds your bloom.\nGreat job today!")
+            return (String(localized: "Your strength shines through."), String(localized: "Every effort builds your bloom.\nGreat job today!"))
         case 5:
-            return ("Little by little, you bloom.", "You've nurtured your growth.\nEnjoy your rest.")
+            return (String(localized: "Little by little, you bloom."), String(localized: "You've nurtured your growth.\nEnjoy your rest."))
         case 6:
-            return ("Your progress is beautiful.", "Your future smile is thanking you.\nSee you tomorrow!")
+            return (String(localized: "Your progress is beautiful."), String(localized: "Your future smile is thanking you.\nSee you tomorrow!"))
         case 7:
-            return ("Embrace your own pace.", "Every effort builds your bloom.")
+            return (String(localized: "Embrace your own pace."), String(localized: "Every effort builds your bloom."))
         case 1:
-            return ("A warmer smile awaits.", "Take it slow.\nYou've earned your rest.")
+            return (String(localized: "A warmer smile awaits."), String(localized: "Take it slow.\nYou've earned your rest."))
         default:
-            return ("Believe in your bloom.", "You did it!\nSee you tomorrow.")
+            return (String(localized: "Believe in your bloom."), String(localized: "You did it!\nSee you tomorrow."))
         }
     }
 
@@ -89,7 +89,7 @@ struct HomeView: View {
 
     private var displayMessage: String {
         if isTodayComplete {
-            return completionQuote.isEmpty ? "You did it!\nSee you tomorrow." : completionQuote
+            return completionQuote.isEmpty ? String(localized: "You did it!\nSee you tomorrow.") : completionQuote
         } else {
             return dailyQuote
         }
@@ -273,17 +273,17 @@ struct HomeView: View {
 
                     if currentDifficulty == .basic {
                         switch completedCount {
-                        case 0: return "Wake Up Your Smile"
-                        case 1: return "Keep the Flow"
-                        default: return "Complete Your Day"
+                        case 0: return String(localized: "Wake Up Your Smile")
+                        case 1: return String(localized: "Keep the Flow")
+                        default: return String(localized: "Complete Your Day")
                         }
                     } else {
                         switch completedCount {
-                        case 0: return "Start Your Training"
-                        case 1: return "Build the Momentum"
-                        case 2: return "You're Warming Up"
-                        case 3: return "Almost There"
-                        default: return "One More to Go!"
+                        case 0: return String(localized: "Start Your Training")
+                        case 1: return String(localized: "Build the Momentum")
+                        case 2: return String(localized: "You're Warming Up")
+                        case 3: return String(localized: "Almost There")
+                        default: return String(localized: "One More to Go!")
                         }
                     }
                 }()

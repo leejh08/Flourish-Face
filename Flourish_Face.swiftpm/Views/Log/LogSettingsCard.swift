@@ -173,7 +173,7 @@ struct LogSettingsCard: View {
         }
     }
 
-    private func settingRow(title: String, subtitle: String, icon: String, iconColor: Color, content: AnyView) -> some View {
+    private func settingRow(title: LocalizedStringKey, subtitle: LocalizedStringKey, icon: String, iconColor: Color, content: AnyView) -> some View {
         HStack(spacing: 16) {
             ZStack {
                 Circle()
@@ -204,10 +204,10 @@ struct LogSettingsCard: View {
 
     private func sideDisplayName(_ side: AffectedSide) -> String {
         switch side {
-        case .left: return "Left"
-        case .right: return "Right"
-        case .central: return "Lower"
-        case .none: return "None"
+        case .left: return String(localized: "Left")
+        case .right: return String(localized: "Right")
+        case .central: return String(localized: "Lower")
+        case .none: return String(localized: "None")
         }
     }
 

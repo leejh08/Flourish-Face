@@ -9,21 +9,21 @@ enum FaceExercise: Int, CaseIterable, Hashable {
 
     var shortName: String {
         switch self {
-        case .browRaise: return "Brow"
-        case .smile: return "Smile"
-        case .eyeClosure: return "Eyes"
-        case .jawOpen: return "Jaw"
-        case .mouthFrown: return "Frown"
+        case .browRaise: return String(localized: "Brow")
+        case .smile: return String(localized: "Smile")
+        case .eyeClosure: return String(localized: "Eyes")
+        case .jawOpen: return String(localized: "Jaw")
+        case .mouthFrown: return String(localized: "Frown")
         }
     }
 
     var guide: String {
         switch self {
-        case .browRaise: return "Raise your eyebrows up high"
-        case .smile: return "Give a big, wide smile"
-        case .eyeClosure: return "Close both eyes tightly"
-        case .jawOpen: return "Open your mouth wide"
-        case .mouthFrown: return "Pull your mouth corners downward"
+        case .browRaise: return String(localized: "Raise your eyebrows up high")
+        case .smile: return String(localized: "Give a big, wide smile")
+        case .eyeClosure: return String(localized: "Close both eyes tightly")
+        case .jawOpen: return String(localized: "Open your mouth wide")
+        case .mouthFrown: return String(localized: "Pull your mouth corners downward")
         }
     }
 
@@ -39,11 +39,11 @@ enum FaceExercise: Int, CaseIterable, Hashable {
 
     var tip: String {
         switch self {
-        case .browRaise: return "Lift both eyebrows to create forehead lines"
-        case .smile: return "Spread both corners of your mouth wide"
-        case .eyeClosure: return "Squeeze your eyes shut gently"
-        case .jawOpen: return "Drop your jaw as far as comfortable"
-        case .mouthFrown: return "Push your lower lip and corners downward"
+        case .browRaise: return String(localized: "Lift both eyebrows to create forehead lines")
+        case .smile: return String(localized: "Spread both corners of your mouth wide")
+        case .eyeClosure: return String(localized: "Squeeze your eyes shut gently")
+        case .jawOpen: return String(localized: "Drop your jaw as far as comfortable")
+        case .mouthFrown: return String(localized: "Push your lower lip and corners downward")
         }
     }
 

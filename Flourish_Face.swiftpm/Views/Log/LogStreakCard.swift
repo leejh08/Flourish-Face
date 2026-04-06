@@ -92,8 +92,8 @@ struct LogStreakCard: View {
             .padding(.vertical, 8)
 
             HStack(spacing: 16) {
-                LogStatBox(value: "\(totalSessions)", label: "Sessions", icon: "figure.run")
-                LogStatBox(value: "\(flowersEarned)", label: "Flowers", icon: "🌸")
+                LogStatBox(value: "\(totalSessions)", label: String(localized: "Sessions"), icon: "figure.run")
+                LogStatBox(value: "\(flowersEarned)", label: String(localized: "Flowers"), icon: "🌸")
             }
         }
         .padding(20)

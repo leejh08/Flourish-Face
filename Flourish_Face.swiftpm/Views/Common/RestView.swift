@@ -133,23 +133,23 @@ struct RestView: View {
     private func setupBonusContent() {
         let symbols = ["hand.raised.fill", "star.fill", "sparkles", "hands.clap.fill", "star.circle.fill", "rainbow"]
         let titles = [
-            "Amazing Effort!",
-            "You're Dedicated!",
-            "Keep It Up!",
-            "Wonderful!",
-            "So Proud of You!"
+            String(localized: "Amazing Effort!"),
+            String(localized: "You're Dedicated!"),
+            String(localized: "Keep It Up!"),
+            String(localized: "Wonderful!"),
+            String(localized: "So Proud of You!")
         ]
         let messages = [
-            "Extra practice shows real commitment.\nYour dedication will pay off.",
-            "Every extra effort counts.\nYou're doing great!",
-            "Going the extra mile!\nYour muscles will thank you.",
-            "Practice makes progress.\nYou're on the right path.",
-            "Taking care of yourself is a gift.\nKeep believing in your journey."
+            String(localized: "Extra practice shows real commitment.\nYour dedication will pay off."),
+            String(localized: "Every extra effort counts.\nYou're doing great!"),
+            String(localized: "Going the extra mile!\nYour muscles will thank you."),
+            String(localized: "Practice makes progress.\nYou're on the right path."),
+            String(localized: "Taking care of yourself is a gift.\nKeep believing in your journey.")
         ]
 
         bonusSymbolName = symbols.randomElement() ?? "hand.raised.fill"
-        bonusTitleValue = titles.randomElement() ?? "Great Job!"
-        bonusMessageValue = messages.randomElement() ?? "Keep going!"
+        bonusTitleValue = titles.randomElement() ?? String(localized: "Great Job!")
+        bonusMessageValue = messages.randomElement() ?? String(localized: "Keep going!")
     }
 
     private var dayCompleteContent: some View {

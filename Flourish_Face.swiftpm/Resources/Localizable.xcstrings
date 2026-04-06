@@ -1,0 +1,3032 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "%lld Sets": {
+      "comment": "SessionIntroView: number of sets display",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld セット"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld 세트"
+          }
+        }
+      }
+    },
+    "%lld flowers collected": {
+      "comment": "CollectionView: subtitle showing total flowers",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "花 %lld 本収集"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "꽃 %lld송이 수집"
+          }
+        }
+      }
+    },
+    "%lld of 7 days completed": {
+      "comment": "LogStreakCard: weekly completion subtitle",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7日中 %lld 日完了"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7일 중 %lld일 완료"
+          }
+        }
+      }
+    },
+    "%lld sessions completed": {
+      "comment": "LogView: subtitle showing total sessions",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld 回完了"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld회 운동 완료"
+          }
+        }
+      }
+    },
+    "3 simple exercises\nfor beginners": {
+      "comment": "Difficulty.basic description",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "初心者向けの\n3つの簡単なエクササイズ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "초보자를 위한\n3가지 간단한 운동"
+          }
+        }
+      }
+    },
+    "5 exercises\nfor a full workout": {
+      "comment": "Difficulty.advanced description",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "フルワークアウトのための\n5つのエクササイズ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "전체 운동을 위한\n5가지 운동"
+          }
+        }
+      }
+    },
+    "A breeze wraps around the garden\nFreely relax\nyour expression": {
+      "comment": "Chapter.breeze story",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "そよ風が庭を包む\n自由に\n表情をリラックスさせましょう"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "바람이 정원을 감싸요\n자유롭게\n표정을 이완하세요"
+          }
+        }
+      }
+    },
+    "A tiny seed is waking up\nBreathe life into it\nwith gentle movements": {
+      "comment": "Chapter.seed story",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "小さな種が目覚めている\n優しい動きで\n命を吹き込んでください"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "작은 씨앗이 깨어나고 있어요\n부드러운 움직임으로\n생명을 불어넣어 주세요"
+          }
+        }
+      }
+    },
+    "A warmer smile awaits.": {
+      "comment": "HomeView daily quote (Sunday)",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "より温かい笑顔が待っています。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "더 따뜻한 미소가 기다리고 있어요."
+          }
+        }
+      }
+    },
+    "Advanced": {
+      "comment": "Difficulty.advanced display name",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "上級"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "심화"
+          }
+        }
+      }
+    },
+    "Affected Side": {
+      "comment": "LogSettingsCard setting row title",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "マヒのある側"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "마비된 쪽"
+          }
+        }
+      }
+    },
+    "All Done Today": {
+      "comment": "HomeView completion status label",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今日の運動完了"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오늘 운동 완료"
+          }
+        }
+      }
+    },
+    "Almost There": {
+      "comment": "HomeView start button label (4th exercise)",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "もう少し"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "거의 다 왔어요"
+          }
+        }
+      }
+    },
+    "Almost there!": {
+      "comment": "SessionTrackingView feedback label",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "もう少しです！"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "거의 다 왔어요!"
+          }
+        }
+      }
+    },
+    "Amazing Effort!": {
+      "comment": "RestView bonus completion title variant",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "素晴らしい努力！"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "대단한 노력이에요!"
+          }
+        }
+      }
+    },
+    "Awaken the Seed": {
+      "comment": "Chapter.seed title",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "種を目覚めさせる"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "씨앗을 깨우다"
+          }
+        }
+      }
+    },
+    "Basic": {
+      "comment": "Difficulty.basic display name",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "基礎"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기초"
+          }
+        }
+      }
+    },
+    "Believe in your bloom.": {
+      "comment": "HomeView daily quote (default)",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "あなたの開花を信じてください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "당신의 꽃피움을 믿으세요."
+          }
+        }
+      }
+    },
+    "Bloom the Flower": {
+      "comment": "Chapter.bloom title",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "花を咲かせる"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "꽃을 피우다"
+          }
+        }
+      }
+    },
+    "Brow": {
+      "comment": "FaceExercise.browRaise short name",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "眉"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "눈썹"
+          }
+        }
+      }
+    },
+    "Build the Momentum": {
+      "comment": "HomeView start button label (2nd exercise, advanced)",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "勢いをつけましょう"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "탄력을 붙여보세요"
+          }
+        }
+      }
+    },
+    "But healing begins\nwith one small movement.": {
+      "comment": "IntroView phase 2 text",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "でも回復は\n小さな一つの動きから始まります。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "하지만 치유는\n작은 움직임 하나에서 시작돼요."
+          }
+        }
+      }
+    },
+    "Camera Access Required": {
+      "comment": "HomeView alert title",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カメラのアクセスが必要"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "카메라 접근 권한 필요"
+          }
+        }
+      }
+    },
+    "Cancel": {
+      "comment": "Generic cancel button",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "キャンセル"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "취소"
+          }
+        }
+      }
+    },
+    "Cherry Blossom": {
+      "comment": "FlowerType.cherry name",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "桜"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "벚꽃"
+          }
+        }
+      }
+    },
+    "Choose one to add to your collection": {
+      "comment": "FlowerPickerView subtitle",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "コレクションに追加する花を選んでください"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "컬렉션에 추가할 꽃을 선택하세요"
+          }
+        }
+      }
+    },
+    "Choose your flower\nwhen you return home": {
+      "comment": "RestView day complete subtitle",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ホームに戻ったら\n花を選んでください"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "홈으로 돌아가면\n꽃을 선택하세요"
+          }
+        }
+      }
+    },
+    "Choose your level": {
+      "comment": "DifficultySelectionPage title",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "レベルを選択してください"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "난이도를 선택하세요"
+          }
+        }
+      }
+    },
+    "Close both eyes tightly": {
+      "comment": "FaceExercise.eyeClosure guide",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "両目をしっかり閉じましょう"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "두 눈을 꼭 감아보세요"
+          }
+        }
+      }
+    },
+    "Close session": {
+      "comment": "SessionTrackingView accessibility label for close button",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "セッションを閉じる"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "세션 닫기"
+          }
+        }
+      }
+    },
+    "Collect": {
+      "comment": "FlowerPickerView confirm button",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "収集する"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "수집하기"
+          }
+        }
+      }
+    },
+    "Collection": {
+      "comment": "Tab bar label",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "コレクション"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "컬렉션"
+          }
+        }
+      }
+    },
+    "Complete Your Day": {
+      "comment": "HomeView start button label (last exercise, basic)",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今日を締めくくりましょう"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오늘을 마무리하세요"
+          }
+        }
+      }
+    },
+    "Complete all exercises\nto collect a flower.": {
+      "comment": "OnboardingView page 2 subtitle",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "すべてのエクササイズを完了して\n花を集めましょう。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "모든 운동을 완료하면\n꽃을 받을 수 있어요."
+          }
+        }
+      }
+    },
+    "Consistency is the key.\nYou're doing amazing!": {
+      "comment": "HomeView completion quote (Monday)",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "継続が鍵です。\n素晴らしいですよ！"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "꾸준함이 핵심이에요.\n정말 잘하고 있어요!"
+          }
+        }
+      }
+    },
+    "Daily exercises\nto support your recovery.": {
+      "comment": "OnboardingView page 1 subtitle",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "回復をサポートする\n毎日のエクササイズ。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "회복을 돕는\n매일의 운동."
+          }
+        }
+      }
+    },
+    "Daily workout intensity": {
+      "comment": "LogSettingsCard difficulty row subtitle",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1日の運動強度"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "일일 운동 강도"
+          }
+        }
+      }
+    },
+    "Daisy": {
+      "comment": "FlowerType.daisy name",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "デイジー"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "데이지"
+          }
+        }
+      }
+    },
+    "Danger Zone": {
+      "comment": "LogSettingsCard reset section title",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "危険ゾーン"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "위험 구역"
+          }
+        }
+      }
+    },
+    "Decrease sets": {
+      "comment": "SetPickerSheet accessibility label",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "セットを減らす"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "세트 줄이기"
+          }
+        }
+      }
+    },
+    "Difficulty": {
+      "comment": "LogSettingsCard setting row title",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "難易度"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "난이도"
+          }
+        }
+      }
+    },
+    "Done": {
+      "comment": "RestView dismiss button (non-day-complete)",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "完了"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "완료"
+          }
+        }
+      }
+    },
+    "Done, return to home": {
+      "comment": "RestView dismiss button accessibility label",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "完了、ホームに戻る"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "완료, 홈으로 돌아가기"
+          }
+        }
+      }
+    },
+    "Drop your jaw as far as comfortable": {
+      "comment": "FaceExercise.jawOpen tip",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無理のない範囲で顎を最大限に下げましょう"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "편한 범위 내에서 턱을 최대한 내려보세요"
+          }
+        }
+      }
+    },
+    "Earn flowers daily": {
+      "comment": "OnboardingView page 2 title",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "毎日花を獲得しましょう"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "매일 꽃을 획득하세요"
+          }
+        }
+      }
+    },
+    "Earned on %@": {
+      "comment": "FlowerDetailView earned date label",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@に獲得"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@에 획득"
+          }
+        }
+      }
+    },
+    "Embrace your own pace.": {
+      "comment": "HomeView daily quote (Saturday)",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自分のペースを大切にしましょう。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "자신만의 속도를 믿으세요."
+          }
+        }
+      }
+    },
+    "Every effort builds your bloom.": {
+      "comment": "HomeView completion quote (Saturday)",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "すべての努力が花を咲かせます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "모든 노력이 꽃을 피워요."
+          }
+        }
+      }
+    },
+    "Every effort builds your bloom.\nGreat job today!": {
+      "comment": "HomeView completion quote (Wednesday)",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "すべての努力が花を咲かせます。\n今日もよく頑張りました！"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "모든 노력이 꽃을 피워요.\n오늘도 수고했어요!"
+          }
+        }
+      }
+    },
+    "Every extra effort counts.\nYou're doing great!": {
+      "comment": "RestView bonus message variant",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "余分な努力も一つひとつ大切です。\n頑張っていますよ！"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "추가 노력 하나하나가 소중해요.\n정말 잘하고 있어요!"
+          }
+        }
+      }
+    },
+    "Every smile starts with hope.": {
+      "comment": "HomeView daily quote (Monday)",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "すべての笑顔は希望から始まります。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "모든 미소는 희망에서 시작돼요."
+          }
+        }
+      }
+    },
+    "Extra Practice": {
+      "comment": "ExercisePickerSheet title",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "追加練習"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "추가 연습"
+          }
+        }
+      }
+    },
+    "Extra practice shows real commitment.\nYour dedication will pay off.": {
+      "comment": "RestView bonus message variant",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "追加練習は本物の努力の証。\n頑張りは必ず実を結びます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "추가 연습은 진정한 노력의 증거예요.\n당신의 헌신이 결실을 맺을 거예요."
+          }
+        }
+      }
+    },
+    "Eye": {
+      "comment": "FaceExercise.eyeClosure short name",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "目"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "눈"
+          }
+        }
+      }
+    },
+    "Eyes": {
+      "comment": "FaceExercise.eyeClosure short name",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "目"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "눈"
+          }
+        }
+      }
+    },
+    "Face Tracking Not Available": {
+      "comment": "SessionTrackingView unsupported device title",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "顔追跡を利用できません"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "얼굴 추적을 사용할 수 없음"
+          }
+        }
+      }
+    },
+    "Facial guide setting": {
+      "comment": "LogSettingsCard affected side row subtitle",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "顔ガイドの設定"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "얼굴 가이드 설정"
+          }
+        }
+      }
+    },
+    "Feel the Breeze": {
+      "comment": "Chapter.breeze title",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "そよ風を感じる"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "바람을 느끼다"
+          }
+        }
+      }
+    },
+    "Flourish": {
+      "comment": "App name shown in IntroView",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flourish"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flourish"
+          }
+        }
+      }
+    },
+    "Flourish needs camera access to track your facial movements. Please enable it in Settings.": {
+      "comment": "HomeView camera permission alert message",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flourishは顔の動きを追跡するためにカメラのアクセスが必要です。設定で有効にしてください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "얼굴 움직임을 추적하려면 카메라 접근 권한이 필요해요. 설정에서 활성화해 주세요."
+          }
+        }
+      }
+    },
+    "Flowers": {
+      "comment": "LogStreakCard stat box label",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "花"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "꽃"
+          }
+        }
+      }
+    },
+    "Frown": {
+      "comment": "FaceExercise.mouthFrown short name",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "しかめ面"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "찡그림"
+          }
+        }
+      }
+    },
+    "Full face": {
+      "comment": "AffectedSideSelectionPage side button subtitle",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "顔全体"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "전체 얼굴"
+          }
+        }
+      }
+    },
+    "Gently move your facial muscles": {
+      "comment": "Chapter.seed guide",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "顔の筋肉を優しく動かしましょう"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "부드럽게 얼굴 근육을 움직여보세요"
+          }
+        }
+      }
+    },
+    "Get Started": {
+      "comment": "AffectedSideSelectionPage confirm button",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "始める"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시작하기"
+          }
+        }
+      }
+    },
+    "Get ready to smile!": {
+      "comment": "SessionCalibrateView capturing prompt",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "笑顔の準備をしましょう！"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "미소 준비하세요!"
+          }
+        }
+      }
+    },
+    "Give a big, wide smile": {
+      "comment": "FaceExercise.smile guide",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "大きく広い笑顔を見せましょう"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "크게 활짝 웃어보세요"
+          }
+        }
+      }
+    },
+    "Go Back": {
+      "comment": "SessionTrackingView unsupported device back button",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "戻る"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "돌아가기"
+          }
+        }
+      }
+    },
+    "Going the extra mile!\nYour muscles will thank you.": {
+      "comment": "RestView bonus message variant",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一歩先へ進んでいます！\n筋肉が感謝するでしょう。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "한 걸음 더 나아가고 있어요!\n근육이 고마워할 거예요."
+          }
+        }
+      }
+    },
+    "Great Job!": {
+      "comment": "RestView normal completion title / bonus fallback",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "よくできました！"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "잘했어요!"
+          }
+        }
+      }
+    },
+    "Grow the Sprout": {
+      "comment": "Chapter.sprout title",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "芽を育てる"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "새싹을 키우다"
+          }
+        }
+      }
+    },
+    "Growth": {
+      "comment": "Tab bar label",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "成長"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "성장"
+          }
+        }
+      }
+    },
+    "Healing is a journey, not a race.": {
+      "comment": "HomeView daily quote (Tuesday)",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "回復は競争ではなく旅です。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "회복은 경주가 아닌 여정이에요."
+          }
+        }
+      }
+    },
+    "Hibiscus": {
+      "comment": "FlowerType.hibiscus name",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ハイビスカス"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "히비스커스"
+          }
+        }
+      }
+    },
+    "Hold each expression for 4 seconds": {
+      "comment": "SessionIntroView / SetPickerSheet subtitle",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "各表情を4秒間維持してください"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "각 표정을 4초간 유지하세요"
+          }
+        }
+      }
+    },
+    "Hold that pose!": {
+      "comment": "SessionTrackingView feedback label (above threshold)",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "そのポーズを維持してください！"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "그 자세를 유지하세요!"
+          }
+        }
+      }
+    },
+    "Hold timer": {
+      "comment": "SessionTrackingView hold progress bar accessibility label",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "維持タイマー"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "유지 타이머"
+          }
+        }
+      }
+    },
+    "Home": {
+      "comment": "Tab bar label",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ホーム"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "홈"
+          }
+        }
+      }
+    },
+    "Increase sets": {
+      "comment": "SetPickerSheet accessibility label",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "セットを増やす"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "세트 늘리기"
+          }
+        }
+      }
+    },
+    "It's becoming more natural": {
+      "comment": "Chapter.bloom guide",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "だんだん自然になってきました"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "점점 자연스러워지고 있어요"
+          }
+        }
+      }
+    },
+    "Jaw": {
+      "comment": "FaceExercise.jawOpen short name",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "顎"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "턱"
+          }
+        }
+      }
+    },
+    "Keep It Up!": {
+      "comment": "RestView bonus title variant",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "続けましょう！"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "계속 힘내세요!"
+          }
+        }
+      }
+    },
+    "Keep going!": {
+      "comment": "RestView bonus message fallback",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "続けましょう！"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "계속 힘내세요!"
+          }
+        }
+      }
+    },
+    "Keep going...": {
+      "comment": "SessionTrackingView feedback label (below threshold)",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "続けてください..."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "계속해보세요..."
+          }
+        }
+      }
+    },
+    "Keep the Flow": {
+      "comment": "HomeView start button label (2nd exercise, basic)",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "流れを保ちましょう"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "흐름을 이어가세요"
+          }
+        }
+      }
+    },
+    "Lavender": {
+      "comment": "FlowerType.lavender name",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ラベンダー"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "라벤더"
+          }
+        }
+      }
+    },
+    "Left": {
+      "comment": "AffectedSide left / LogSettingsCard display",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "左"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "왼쪽"
+          }
+        }
+      }
+    },
+    "Left Side": {
+      "comment": "LogSettingsCard affected side menu option",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "左側"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "왼쪽"
+          }
+        }
+      }
+    },
+    "Lift both eyebrows to create forehead lines": {
+      "comment": "FaceExercise.browRaise tip",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "額にしわができるように両眉を上げましょう"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이마에 주름이 생기도록 양쪽 눈썹을 올려보세요"
+          }
+        }
+      }
+    },
+    "Little by little, you bloom.": {
+      "comment": "HomeView daily quote (Thursday)",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "少しずつ、あなたは咲いています。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "조금씩, 당신은 피어나고 있어요."
+          }
+        }
+      }
+    },
+    "Lotus": {
+      "comment": "FlowerType.lotus name",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "蓮"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "연꽃"
+          }
+        }
+      }
+    },
+    "Lower": {
+      "comment": "LogSettingsCard affected side display (central)",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下顔面"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "하안면"
+          }
+        }
+      }
+    },
+    "Lower Face": {
+      "comment": "LogSettingsCard affected side menu option",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下顔面"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "하안면"
+          }
+        }
+      }
+    },
+    "Lower face only": {
+      "comment": "AffectedSideSelectionPage central option button",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下顔面のみ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "하안면만"
+          }
+        }
+      }
+    },
+    "Move freely and relax": {
+      "comment": "Chapter.breeze guide",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自由に動いてリラックスしましょう"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "자유롭게 움직이며 이완하세요"
+          }
+        }
+      }
+    },
+    "My Collection": {
+      "comment": "CollectionView header title",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "マイコレクション"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "나의 컬렉션"
+          }
+        }
+      }
+    },
+    "Next": {
+      "comment": "OnboardingView next button",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "次へ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다음"
+          }
+        }
+      }
+    },
+    "No Smile Detected": {
+      "comment": "SessionCalibrateView failed state title",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "笑顔が検出されませんでした"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "미소가 감지되지 않았어요"
+          }
+        }
+      }
+    },
+    "No flowers yet": {
+      "comment": "CollectionView empty state label",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "まだ花がありません"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "아직 꽃이 없어요"
+          }
+        }
+      }
+    },
+    "No smile detected — try smiling wider!": {
+      "comment": "SessionCalibrateView low detection warning",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "笑顔が検出されませんでした — もっと大きく笑ってみてください！"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "미소가 감지되지 않았어요 — 더 크게 웃어보세요!"
+          }
+        }
+      }
+    },
+    "None": {
+      "comment": "AffectedSide none display",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "なし"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "없음"
+          }
+        }
+      }
+    },
+    "Number of Sets": {
+      "comment": "SetPickerSheet title",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "セット数"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "세트 수"
+          }
+        }
+      }
+    },
+    "One More to Go!": {
+      "comment": "HomeView start button label (5th exercise, advanced)",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "あと一つ！"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "하나만 더!"
+          }
+        }
+      }
+    },
+    "One step closer to your goals.\nTime to rest now.": {
+      "comment": "HomeView completion quote (Tuesday)",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "目標に一歩近づきました。\n今は休む時間です。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "목표에 한 걸음 더 가까워졌어요.\n이제 쉴 시간이에요."
+          }
+        }
+      }
+    },
+    "Open Settings": {
+      "comment": "HomeView camera permission alert button",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "設定を開く"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "설정 열기"
+          }
+        }
+      }
+    },
+    "Open your mouth wide": {
+      "comment": "FaceExercise.jawOpen guide",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "口を大きく開けましょう"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "입을 크게 벌려보세요"
+          }
+        }
+      }
+    },
+    "Pick Your Flower": {
+      "comment": "HomeView / RestView flower pick button",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "花を選ぶ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "꽃 고르기"
+          }
+        }
+      }
+    },
+    "Pick Your Flower!": {
+      "comment": "FlowerPickerView title",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "花を選びましょう！"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "꽃을 골라보세요!"
+          }
+        }
+      }
+    },
+    "Pick your flower reward": {
+      "comment": "HomeView flower pick button accessibility label",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "花の報酬を選ぶ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "꽃 보상 고르기"
+          }
+        }
+      }
+    },
+    "Practice More": {
+      "comment": "HomeView bonus practice button",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "もっと練習する"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "추가 연습하기"
+          }
+        }
+      }
+    },
+    "Practice makes progress.\nYou're on the right path.": {
+      "comment": "RestView bonus message variant",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "練習が進歩を生みます。\n正しい道を歩んでいます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "연습이 발전을 만들어요.\n올바른 길을 걷고 있어요."
+          }
+        }
+      }
+    },
+    "Practice more exercises": {
+      "comment": "HomeView bonus practice button accessibility label",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "もっとエクササイズを練習する"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "운동 더 연습하기"
+          }
+        }
+      }
+    },
+    "Practice simple\nface exercises": {
+      "comment": "OnboardingView page 1 title",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "簡単な顔の\nエクササイズを練習しましょう"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "간단한 얼굴 운동을\n연습하세요"
+          }
+        }
+      }
+    },
+    "Preferences": {
+      "comment": "LogSettingsCard section title",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "設定"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "설정"
+          }
+        }
+      }
+    },
+    "Pull your mouth corners downward": {
+      "comment": "FaceExercise.mouthFrown guide",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "口角を下に引き下げましょう"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "입꼬리를 아래로 내려주세요"
+          }
+        }
+      }
+    },
+    "Push your lower lip and corners downward": {
+      "comment": "FaceExercise.mouthFrown tip",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下唇と口角を下に押し下げましょう"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "아랫입술과 입꼬리를 아래로 밀어주세요"
+          }
+        }
+      }
+    },
+    "Raise your eyebrows up high": {
+      "comment": "FaceExercise.browRaise guide",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "眉をしっかり上げましょう"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "눈썹을 높이 올려주세요"
+          }
+        }
+      }
+    },
+    "Ready to Smile": {
+      "comment": "SessionCalibrateView ready state button",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "笑顔の準備完了"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "미소 준비 완료"
+          }
+        }
+      }
+    },
+    "Reset": {
+      "comment": "LogSettingsCard reset button label",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "リセット"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "초기화"
+          }
+        }
+      }
+    },
+    "Reset All Data?": {
+      "comment": "LogSettingsCard reset confirmation alert title",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "すべてのデータをリセットしますか？"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "모든 데이터를 초기화할까요?"
+          }
+        }
+      }
+    },
+    "Reset Everything": {
+      "comment": "LogSettingsCard reset confirmation destructive button",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "すべてリセット"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "모두 초기화"
+          }
+        }
+      }
+    },
+    "Reset everything": {
+      "comment": "LogSettingsCard reset section subtitle",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "すべてのデータをリセット"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "모든 데이터 초기화"
+          }
+        }
+      }
+    },
+    "Right": {
+      "comment": "AffectedSide right / LogSettingsCard display",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "右"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오른쪽"
+          }
+        }
+      }
+    },
+    "Right Side": {
+      "comment": "LogSettingsCard affected side menu option",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "右側"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오른쪽"
+          }
+        }
+      }
+    },
+    "Rose": {
+      "comment": "FlowerType.rose name",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "バラ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "장미"
+          }
+        }
+      }
+    },
+    "Select an affected side first": {
+      "comment": "AffectedSideSelectionPage get started button accessibility hint",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "まずマヒのある側を選択してください"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "마비된 쪽을 먼저 선택하세요"
+          }
+        }
+      }
+    },
+    "Select if only your lower face is affected": {
+      "comment": "AffectedSideSelectionPage lower face button accessibility hint",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下顔面だけが影響を受けている場合に選択してください"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "하안면만 마비된 경우 선택하세요"
+          }
+        }
+      }
+    },
+    "Sessions": {
+      "comment": "LogStreakCard stat box label",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "セッション"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "세션"
+          }
+        }
+      }
+    },
+    "Skip": {
+      "comment": "IntroView skip button / SessionCalibrateView skip button",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スキップ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "건너뛰기"
+          }
+        }
+      }
+    },
+    "Skip calibration, use default target": {
+      "comment": "SessionCalibrateView skip button accessibility label",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "キャリブレーションをスキップ、デフォルト目標を使用"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "보정 건너뛰기, 기본 목표 사용"
+          }
+        }
+      }
+    },
+    "Skip this set": {
+      "comment": "SessionTrackingView skip set button",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このセットをスキップ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 세트 건너뛰기"
+          }
+        }
+      }
+    },
+    "Smile": {
+      "comment": "FaceExercise.smile short name",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "笑顔"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "미소"
+          }
+        }
+      }
+    },
+    "Smile Calibration": {
+      "comment": "SessionCalibrateView ready state title",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "笑顔のキャリブレーション"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "미소 보정"
+          }
+        }
+      }
+    },
+    "Smile as wide as you can!": {
+      "comment": "SessionCalibrateView capturing prompt",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "できる限り大きく笑ってください！"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "최대한 크게 웃어주세요!"
+          }
+        }
+      }
+    },
+    "So Proud of You!": {
+      "comment": "RestView bonus title variant",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "とても誇りに思います！"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "정말 자랑스러워요!"
+          }
+        }
+      }
+    },
+    "Some days, it's hard\nto look in the mirror.": {
+      "comment": "IntroView phase 0 text",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ある日は、鏡を見るのが\n辛くなることもあります。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "어떤 날은 거울을 보는 것이\n힘들기도 해요."
+          }
+        }
+      }
+    },
+    "Spread both corners of your mouth wide": {
+      "comment": "FaceExercise.smile tip",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "両口角を広く広げましょう"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "양쪽 입꼬리를 넓게 펼쳐보세요"
+          }
+        }
+      }
+    },
+    "Squeeze your eyes shut gently": {
+      "comment": "FaceExercise.eyeClosure tip",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "目を優しくしっかり閉じましょう"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "눈을 부드럽게 꼭 감아보세요"
+          }
+        }
+      }
+    },
+    "Start": {
+      "comment": "SessionIntroView / SetPickerSheet start button",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開始"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시작"
+          }
+        }
+      }
+    },
+    "Start Your Training": {
+      "comment": "HomeView start button label (1st exercise, advanced)",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "トレーニングを始めましょう"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "훈련을 시작하세요"
+          }
+        }
+      }
+    },
+    "Starting soon...": {
+      "comment": "SessionGuideView countdown hint",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "まもなく開始します..."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "곧 시작합니다..."
+          }
+        }
+      }
+    },
+    "Sunflower": {
+      "comment": "FlowerType.sunflower name",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ひまわり"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "해바라기"
+          }
+        }
+      }
+    },
+    "Take a short break...": {
+      "comment": "SessionSetRestView rest hint",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "少し休憩してください..."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "잠시 쉬어가세요..."
+          }
+        }
+      }
+    },
+    "Take it slow.\nYou've earned your rest.": {
+      "comment": "HomeView completion quote (Sunday)",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ゆっくりしてください。\n休む資格があります。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "천천히 하세요.\n충분히 쉴 자격이 있어요."
+          }
+        }
+      }
+    },
+    "Taking care of yourself is a gift.\nKeep believing in your journey.": {
+      "comment": "RestView bonus message variant",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自分を大切にすることは贈り物です。\n旅を信じ続けてください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "자신을 돌보는 것은 선물이에요.\n여정을 계속 믿어주세요."
+          }
+        }
+      }
+    },
+    "Tap to begin 5-second smile capture": {
+      "comment": "SessionCalibrateView ready state button accessibility hint",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5秒間の笑顔撮影を始めるにはタップしてください"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5초 미소 촬영을 시작하려면 탭하세요"
+          }
+        }
+      }
+    },
+    "Tap to skip the current set": {
+      "comment": "SessionTrackingView skip button accessibility hint",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "現在のセットをスキップするにはタップしてください"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "현재 세트를 건너뛰려면 탭하세요"
+          }
+        }
+      }
+    },
+    "The bud is about to open\nNatural movements\nwill make it bloom": {
+      "comment": "Chapter.bloom story",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "つぼみが開こうとしています\n自然な動きが\n花を咲かせるでしょう"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "꽃봉오리가 피어나려 해요\n자연스러운 움직임이\n꽃을 피울 거예요"
+          }
+        }
+      }
+    },
+    "The sprout is reaching for sunlight\nGive it strength\nwith a warm expression": {
+      "comment": "Chapter.sprout story",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "芽が太陽の光に向かって伸びています\n温かい表情で\n力を与えましょう"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "새싹이 햇빛을 향해 뻗어가고 있어요\n따뜻한 표정으로\n힘을 주세요"
+          }
+        }
+      }
+    },
+    "This Week": {
+      "comment": "LogStreakCard section title",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今週"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이번 주"
+          }
+        }
+      }
+    },
+    "This device doesn't support Face Tracking.\nPlease use an iPad with TrueDepth camera.": {
+      "comment": "SessionTrackingView unsupported device message",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このデバイスは顔追跡をサポートしていません。\nTrueDepthカメラを搭載したデバイスをご使用ください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 기기는 얼굴 추적을 지원하지 않아요.\nTrueDepth 카메라가 있는 기기를 사용해 주세요."
+          }
+        }
+      }
+    },
+    "Track your progress": {
+      "comment": "OnboardingView page 3 title",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "成長を確認しましょう"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "나의 성장을 확인하세요"
+          }
+        }
+      }
+    },
+    "Try Again": {
+      "comment": "SessionCalibrateView failed state retry button",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "もう一度試す"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다시 시도"
+          }
+        }
+      }
+    },
+    "Tulip": {
+      "comment": "FlowerType.tulip name",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "チューリップ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "튤립"
+          }
+        }
+      }
+    },
+    "Wake Up Your Smile": {
+      "comment": "HomeView start button label (1st exercise, basic)",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "笑顔を目覚めさせましょう"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "미소를 깨워보세요"
+          }
+        }
+      }
+    },
+    "Watch your smile\ngrow stronger.": {
+      "comment": "OnboardingView page 3 subtitle",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "笑顔が\n強くなっていくのを見守りましょう。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "미소가 점점\n강해지는 걸 지켜보세요."
+          }
+        }
+      }
+    },
+    "We couldn't capture your smile.\nTry again or skip to use default settings.": {
+      "comment": "SessionCalibrateView failed state message",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "笑顔を検出できませんでした。\nもう一度試すか、スキップしてデフォルト設定を使用してください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "미소를 감지하지 못했어요.\n다시 시도하거나 건너뛰어 기본 설정을 사용하세요."
+          }
+        }
+      }
+    },
+    "We'll mirror your healthy side\nas a guide during exercises.": {
+      "comment": "AffectedSideSelectionPage subtitle",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "エクササイズ中は健康な側を\n鏡のようにガイドとして表示します。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "운동 중 건강한 쪽을\n거울처럼 가이드로 보여드릴게요."
+          }
+        }
+      }
+    },
+    "When you press the button below,\nsmile as wide as you can for 5 seconds.\nWe'll use it to set your personal target.": {
+      "comment": "SessionCalibrateView ready state instruction",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下のボタンを押すと、\n5秒間できる限り大きく笑ってください。\n個人目標の設定に使用します。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "아래 버튼을 누르면\n5초 동안 최대한 크게 웃어주세요.\n개인 목표를 설정하는 데 사용할게요."
+          }
+        }
+      }
+    },
+    "When your own smile\nfeels out of reach.": {
+      "comment": "IntroView phase 1 text",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自分の笑顔が\n遠く感じるとき。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "자신의 미소가\n멀게만 느껴질 때."
+          }
+        }
+      }
+    },
+    "Which exercise would you like to practice?": {
+      "comment": "ExercisePickerSheet subtitle",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "どのエクササイズを練習しますか？"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "어떤 운동을 연습하고 싶으세요?"
+          }
+        }
+      }
+    },
+    "Which side is affected?": {
+      "comment": "AffectedSideSelectionPage title",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "どちらの側がマヒしていますか？"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "어느 쪽이 마비되었나요?"
+          }
+        }
+      }
+    },
+    "Wonderful!": {
+      "comment": "RestView bonus title variant",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "素晴らしい！"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "훌륭해요!"
+          }
+        }
+      }
+    },
+    "You can change this later\nin the settings.": {
+      "comment": "DifficultySelectionPage subtitle",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "後で設定から\n変更できます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "나중에 설정에서\n변경할 수 있어요."
+          }
+        }
+      }
+    },
+    "You did it!\nSee you tomorrow.": {
+      "comment": "HomeView completion quote (default) / displayMessage fallback",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "やりました！\nまた明日。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "해냈어요!\n내일 만나요."
+          }
+        }
+      }
+    },
+    "You earned a flower!": {
+      "comment": "RestView day complete title",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "花を獲得しました！"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "꽃을 획득했어요!"
+          }
+        }
+      }
+    },
+    "You're Dedicated!": {
+      "comment": "RestView bonus title variant",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本当に熱心ですね！"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "정말 열심이시네요!"
+          }
+        }
+      }
+    },
+    "You're Warming Up": {
+      "comment": "HomeView start button label (3rd exercise, advanced)",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ウォームアップ中です"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "몸이 풀리고 있어요"
+          }
+        }
+      }
+    },
+    "You've nurtured your growth.\nEnjoy your rest.": {
+      "comment": "HomeView completion quote (Thursday)",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "成長をよく育てました。\nゆっくり休んでください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "성장을 잘 가꿨어요.\n편히 쉬세요."
+          }
+        }
+      }
+    },
+    "Your Progress": {
+      "comment": "LogView header title",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "あなたの成長"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "나의 성장"
+          }
+        }
+      }
+    },
+    "Your future smile is thanking you.\nSee you tomorrow!": {
+      "comment": "HomeView completion quote (Friday)",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未来の笑顔があなたに感謝しています。\nまた明日！"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "미래의 미소가 당신에게 고마워해요.\n내일 만나요!"
+          }
+        }
+      }
+    },
+    "Your movements are growing": {
+      "comment": "Chapter.sprout guide",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "あなたの動きが育っています"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "당신의 움직임이 자라고 있어요"
+          }
+        }
+      }
+    },
+    "Your progress is beautiful.": {
+      "comment": "HomeView daily quote (Friday)",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "あなたの進歩は美しいです。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "당신의 발전이 아름다워요."
+          }
+        }
+      }
+    },
+    "Your sessions, flowers, and settings will be permanently deleted. This cannot be undone.": {
+      "comment": "LogSettingsCard reset confirmation alert message",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "セッション、花、設定が完全に削除されます。この操作は元に戻せません。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "세션, 꽃, 설정이 영구적으로 삭제됩니다. 되돌릴 수 없어요."
+          }
+        }
+      }
+    },
+    "Your strength shines through.": {
+      "comment": "HomeView daily quote (Wednesday)",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "あなたの力が輝いています。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "당신의 힘이 빛나고 있어요."
+          }
+        }
+      }
+    },
+    "completed": {
+      "comment": "HomeStepIndicator accessibility state",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "完了"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "완료됨"
+          }
+        }
+      }
+    },
+    "not yet done": {
+      "comment": "HomeStepIndicator accessibility state",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未完了"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "아직 미완료"
+          }
+        }
+      }
+    },
+    "up next": {
+      "comment": "HomeStepIndicator accessibility state",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "次の予定"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다음 순서"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

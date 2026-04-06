@@ -25,14 +25,14 @@ enum FlowerType: String, Codable, CaseIterable {
 
     var name: String {
         switch self {
-        case .rose: return "Rose"
-        case .tulip: return "Tulip"
-        case .sunflower: return "Sunflower"
-        case .daisy: return "Daisy"
-        case .cherry: return "Cherry Blossom"
-        case .lavender: return "Lavender"
-        case .hibiscus: return "Hibiscus"
-        case .lotus: return "Lotus"
+        case .rose: return String(localized: "Rose")
+        case .tulip: return String(localized: "Tulip")
+        case .sunflower: return String(localized: "Sunflower")
+        case .daisy: return String(localized: "Daisy")
+        case .cherry: return String(localized: "Cherry Blossom")
+        case .lavender: return String(localized: "Lavender")
+        case .hibiscus: return String(localized: "Hibiscus")
+        case .lotus: return String(localized: "Lotus")
         }
     }
 
