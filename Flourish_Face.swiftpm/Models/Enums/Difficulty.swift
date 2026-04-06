@@ -6,15 +6,15 @@ enum Difficulty: String, CaseIterable {
 
     var displayName: String {
         switch self {
-        case .basic: return "Basic"
-        case .advanced: return "Advanced"
+        case .basic: return String(localized: "Basic")
+        case .advanced: return String(localized: "Advanced")
         }
     }
 
     var description: String {
         switch self {
-        case .basic: return "3 simple exercises\nfor beginners"
-        case .advanced: return "5 exercises\nfor a full workout"
+        case .basic: return String(localized: "3 simple exercises\nfor beginners")
+        case .advanced: return String(localized: "5 exercises\nfor a full workout")
         }
     }
 
