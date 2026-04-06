@@ -173,7 +173,7 @@ struct LogSettingsCard: View {
         }
     }
 
-    private func settingRow(title: String, subtitle: String, icon: String, iconColor: Color, content: AnyView) -> some View {
+    private func settingRow(title: LocalizedStringKey, subtitle: LocalizedStringKey, icon: String, iconColor: Color, content: AnyView) -> some View {
         HStack(spacing: 16) {
             ZStack {
                 Circle()
