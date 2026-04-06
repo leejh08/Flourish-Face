@@ -9,6 +9,7 @@ xcuserdata/
 
 # oh-my-claudecode
 .omc/
+**/.omc/
 
 # Claude Code
 .claude/
