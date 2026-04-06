@@ -1,0 +1,17 @@
+# Swift Package Manager
+.build/
+**/.build/
+
+# Xcode derived data & user state
+*.xcuserstate
+xcuserdata/
+*.xcworkspace/xcuserdata/
+
+# oh-my-claudecode
+.omc/
+
+# Claude Code
+.claude/
+
+# macOS
+.DS_Store
