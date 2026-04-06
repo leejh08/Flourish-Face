@@ -4,6 +4,7 @@ import AppleProductTypes
 
 let package = Package(
     name: "Flourish_Face",
+    defaultLocalization: "en",
     platforms: [
         .iOS("18.0")
     ],
