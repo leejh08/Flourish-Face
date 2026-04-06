@@ -22,8 +22,8 @@ final class NotificationManager {
                 guard !pending.contains(where: { $0.identifier == self.reminderID }) else { return }
 
                 let content = UNMutableNotificationContent()
-                content.title = String(localized: "Notification.reminder.title")
-                content.body = String(localized: "Notification.reminder.body")
+                content.title = String(localized: "Don't forget to exercise today! 🌸")
+                content.body = String(localized: "Keep your streak going — exercise now.")
                 content.sound = .default
 
                 var components = DateComponents()

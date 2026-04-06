@@ -698,6 +698,23 @@
         }
       }
     },
+    "Don't forget to exercise today! 🌸": {
+      "comment": "Daily streak reminder notification title",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今日の運動をお忘れなく！🌸"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오늘 운동 잊지 마세요! 🌸"
+          }
+        }
+      }
+    },
     "Done": {
       "comment": "RestView dismiss button (non-day-complete)",
       "localizations": {
@@ -1446,6 +1463,23 @@
         }
       }
     },
+    "Keep your streak going — exercise now.": {
+      "comment": "Daily streak reminder notification body",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今すぐ運動して、ストリークを続けましょう。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "지금 운동하고 스트릭을 이어가세요."
+          }
+        }
+      }
+    },
     "Lavender": {
       "comment": "FlowerType.lavender name",
       "localizations": {
@@ -1714,40 +1748,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "없음"
-          }
-        }
-      }
-    },
-    "Notification.reminder.body": {
-      "comment": "Daily streak reminder notification body",
-      "localizations": {
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "今すぐ運動して、ストリークを続けましょう。"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "지금 운동하고 스트릭을 이어가세요."
-          }
-        }
-      }
-    },
-    "Notification.reminder.title": {
-      "comment": "Daily streak reminder notification title",
-      "localizations": {
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "今日の運動をお忘れなく！🌸"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "오늘 운동 잊지 마세요! 🌸"
           }
         }
       }
