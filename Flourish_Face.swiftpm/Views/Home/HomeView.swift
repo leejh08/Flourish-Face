@@ -153,6 +153,12 @@ struct HomeView: View {
                 dailyQuote = quotes.motivational
                 completionQuote = quotes.completion
 
+                if isTodayComplete {
+                    NotificationManager.shared.cancelStreakReminder()
+                } else {
+                    NotificationManager.shared.scheduleStreakReminder()
+                }
+
                 if pendingFlowerPick {
                     showFlowerPicker = true
                 }

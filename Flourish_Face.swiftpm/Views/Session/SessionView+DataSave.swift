@@ -24,6 +24,7 @@ extension SessionView {
             if previousSet.count < requiredExerciseCount {
                 appFlowersEarned += 1
                 pendingFlowerPick = true
+                NotificationManager.shared.cancelStreakReminder()
             }
         }
     }

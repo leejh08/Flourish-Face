@@ -212,6 +212,7 @@ struct LogSettingsCard: View {
     }
 
     private func resetAllData() {
+        NotificationManager.shared.cancelAll()
         todayCompletedExercisesData = ""
         lastExerciseDate = ""
         totalGrowthPoints = 0
