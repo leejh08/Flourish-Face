@@ -99,7 +99,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "7日中 %lld 日完了"
+            "value": "今週の達成: %lld日"
           }
         },
         "ko": {
@@ -122,7 +122,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "%lld 回完了"
+            "value": "累計完了: %lld回"
           }
         },
         "ko": {
@@ -283,7 +283,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "マヒのある側"
+            "value": "麻痺側"
           }
         },
         "ko": {
@@ -927,7 +927,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "危険ゾーン"
+            "value": "データ管理"
           }
         },
         "ko": {
@@ -1456,7 +1456,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "花"
+            "value": "獲得した花"
           }
         },
         "ko": {
@@ -1709,7 +1709,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "成長"
+            "value": "記録"
           }
         },
         "ko": {
@@ -3112,7 +3112,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "セッション"
+            "value": "トレーニング回数"
           }
         },
         "ko": {
@@ -4170,7 +4170,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "あなたの成長"
+            "value": "進捗状況"
           }
         },
         "ko": {
