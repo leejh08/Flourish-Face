@@ -15,6 +15,12 @@
             "state": "translated",
             "value": "%2$d초 중 %1$@초"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%2$d秒中%1$@秒"
+          }
         }
       }
     },
@@ -31,6 +37,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%@ 쪽 마비"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@侧面瘫痪"
           }
         }
       }
@@ -49,6 +61,12 @@
             "state": "translated",
             "value": "%lld 세트"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld 组"
+          }
         }
       }
     },
@@ -65,6 +83,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "꽃 %lld송이 수집"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已收集 %lld 朵花"
           }
         }
       }
@@ -83,6 +107,12 @@
             "state": "translated",
             "value": "7일 중 %lld일 완료"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7天中完成了 %lld 天"
+          }
         }
       }
     },
@@ -99,6 +129,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%lld회 운동 완료"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已完成 %lld 次"
           }
         }
       }
@@ -117,6 +153,12 @@
             "state": "translated",
             "value": "초보자를 위한\n3가지 간단한 운동"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "适合初学者的\n3个简单练习"
+          }
         }
       }
     },
@@ -133,6 +175,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "전체 운동을 위한\n5가지 운동"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "完整锻炼的\n5个练习"
           }
         }
       }
@@ -151,6 +199,12 @@
             "state": "translated",
             "value": "바람이 정원을 감싸요\n자유롭게\n표정을 이완하세요"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "微风环绕花园\n自由地\n放松你的表情"
+          }
         }
       }
     },
@@ -167,6 +221,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "작은 씨앗이 깨어나고 있어요\n부드러운 움직임으로\n생명을 불어넣어 주세요"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一粒小种子正在苏醒\n用轻柔的动作\n为它注入生命"
           }
         }
       }
@@ -185,6 +245,12 @@
             "state": "translated",
             "value": "더 따뜻한 미소가 기다리고 있어요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "更温暖的微笑在等待着你。"
+          }
         }
       }
     },
@@ -201,6 +267,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "심화"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "高级"
           }
         }
       }
@@ -219,6 +291,12 @@
             "state": "translated",
             "value": "마비된 쪽"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "瘫痪侧"
+          }
         }
       }
     },
@@ -235,6 +313,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "오늘 운동 완료"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今日完成"
           }
         }
       }
@@ -253,6 +337,12 @@
             "state": "translated",
             "value": "거의 다 왔어요"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "快到了"
+          }
         }
       }
     },
@@ -269,6 +359,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "거의 다 왔어요!"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "快到了！"
           }
         }
       }
@@ -287,6 +383,12 @@
             "state": "translated",
             "value": "대단한 노력이에요!"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "太努力了！"
+          }
         }
       }
     },
@@ -303,6 +405,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "씨앗을 깨우다"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "唤醒种子"
           }
         }
       }
@@ -321,6 +429,12 @@
             "state": "translated",
             "value": "기초"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "基础"
+          }
         }
       }
     },
@@ -337,6 +451,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "당신의 꽃피움을 믿으세요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "相信你会绽放。"
           }
         }
       }
@@ -355,6 +475,12 @@
             "state": "translated",
             "value": "꽃을 피우다"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "让花绽放"
+          }
         }
       }
     },
@@ -371,6 +497,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "눈썹"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "眉毛"
           }
         }
       }
@@ -389,6 +521,12 @@
             "state": "translated",
             "value": "탄력을 붙여보세요"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "积累动力"
+          }
         }
       }
     },
@@ -405,6 +543,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "하지만 치유는\n작은 움직임 하나에서 시작돼요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "但康复\n从一个小小的动作开始。"
           }
         }
       }
@@ -423,6 +567,12 @@
             "state": "translated",
             "value": "카메라 접근 권한 필요"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要相机权限"
+          }
         }
       }
     },
@@ -439,6 +589,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "취소"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "取消"
           }
         }
       }
@@ -457,6 +613,12 @@
             "state": "translated",
             "value": "벚꽃"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "樱花"
+          }
         }
       }
     },
@@ -473,6 +635,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "컬렉션에 추가할 꽃을 선택하세요"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择一朵加入你的收藏"
           }
         }
       }
@@ -491,6 +659,12 @@
             "state": "translated",
             "value": "홈으로 돌아가면\n꽃을 선택하세요"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "回到主页时\n选择你的花"
+          }
         }
       }
     },
@@ -507,6 +681,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "난이도를 선택하세요"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择你的级别"
           }
         }
       }
@@ -525,6 +705,12 @@
             "state": "translated",
             "value": "두 눈을 꼭 감아보세요"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "用力闭上双眼"
+          }
         }
       }
     },
@@ -541,6 +727,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "세션 닫기"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关闭训练"
           }
         }
       }
@@ -559,6 +751,12 @@
             "state": "translated",
             "value": "수집하기"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "收集"
+          }
         }
       }
     },
@@ -575,6 +773,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "컬렉션"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "收藏"
           }
         }
       }
@@ -593,6 +797,12 @@
             "state": "translated",
             "value": "오늘을 마무리하세요"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "完成今天的训练"
+          }
         }
       }
     },
@@ -609,6 +819,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "모든 운동을 완료하면\n꽃을 받을 수 있어요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "完成所有练习\n即可获得一朵花。"
           }
         }
       }
@@ -627,6 +843,12 @@
             "state": "translated",
             "value": "꾸준함이 핵심이에요.\n정말 잘하고 있어요!"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "坚持是关键。\n你做得太棒了！"
+          }
         }
       }
     },
@@ -643,6 +865,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "회복을 돕는\n매일의 운동."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "每日练习\n助力你的康复。"
           }
         }
       }
@@ -661,6 +889,12 @@
             "state": "translated",
             "value": "일일 운동 강도"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "每日训练强度"
+          }
         }
       }
     },
@@ -677,6 +911,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "데이지"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "雏菊"
           }
         }
       }
@@ -695,6 +935,12 @@
             "state": "translated",
             "value": "위험 구역"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "危险区域"
+          }
         }
       }
     },
@@ -711,6 +957,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "세트 줄이기"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "减少组数"
           }
         }
       }
@@ -729,6 +981,12 @@
             "state": "translated",
             "value": "난이도"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "难度"
+          }
         }
       }
     },
@@ -745,6 +1003,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "오늘 운동 잊지 마세요! 🌸"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不要忘记今天的练习！🌸"
           }
         }
       }
@@ -763,6 +1027,12 @@
             "state": "translated",
             "value": "완료"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "完成"
+          }
         }
       }
     },
@@ -779,6 +1049,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "완료, 홈으로 돌아가기"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "完成，返回主页"
           }
         }
       }
@@ -797,6 +1073,12 @@
             "state": "translated",
             "value": "편한 범위 내에서 턱을 최대한 내려보세요"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在舒适范围内尽量张开下颌"
+          }
         }
       }
     },
@@ -813,6 +1095,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "매일 꽃을 획득하세요"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "每天获得花朵"
           }
         }
       }
@@ -831,6 +1119,12 @@
             "state": "translated",
             "value": "%@에 획득"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "获得于 %@"
+          }
         }
       }
     },
@@ -847,6 +1141,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "자신만의 속도를 믿으세요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保持自己的节奏。"
           }
         }
       }
@@ -865,6 +1165,12 @@
             "state": "translated",
             "value": "모든 노력이 꽃을 피워요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "每一份努力都在促进你的绽放。"
+          }
         }
       }
     },
@@ -881,6 +1187,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "모든 노력이 꽃을 피워요.\n오늘도 수고했어요!"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "每一份努力都在促进你的绽放。\n今天做得很好！"
           }
         }
       }
@@ -899,6 +1211,12 @@
             "state": "translated",
             "value": "추가 노력 하나하나가 소중해요.\n정말 잘하고 있어요!"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "每一份额外的努力都很重要。\n你做得很好！"
+          }
         }
       }
     },
@@ -915,6 +1233,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "모든 미소는 희망에서 시작돼요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "每一个微笑都始于希望。"
           }
         }
       }
@@ -933,6 +1257,12 @@
             "state": "translated",
             "value": "추가 연습"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "额外练习"
+          }
         }
       }
     },
@@ -949,6 +1279,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "추가 연습은 진정한 노력의 증거예요.\n당신의 헌신이 결실을 맺을 거예요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "额外练习展现了真正的承诺。\n你的付出一定会有回报。"
           }
         }
       }
@@ -967,6 +1303,12 @@
             "state": "translated",
             "value": "눈"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "眼睛"
+          }
         }
       }
     },
@@ -983,6 +1325,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "눈"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "眼睛"
           }
         }
       }
@@ -1001,6 +1349,12 @@
             "state": "translated",
             "value": "얼굴 추적을 사용할 수 없음"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "面部追踪不可用"
+          }
         }
       }
     },
@@ -1017,6 +1371,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "얼굴 가이드 설정"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "面部引导设置"
           }
         }
       }
@@ -1035,6 +1395,12 @@
             "state": "translated",
             "value": "바람을 느끼다"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "感受微风"
+          }
         }
       }
     },
@@ -1048,6 +1414,12 @@
           }
         },
         "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flourish"
+          }
+        },
+        "zh-Hans": {
           "stringUnit": {
             "state": "translated",
             "value": "Flourish"
@@ -1069,6 +1441,12 @@
             "state": "translated",
             "value": "얼굴 움직임을 추적하려면 카메라 접근 권한이 필요해요. 설정에서 활성화해 주세요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flourish需要相机权限来追踪你的面部动作。请在设置中启用。"
+          }
         }
       }
     },
@@ -1085,6 +1463,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "꽃"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "花朵"
           }
         }
       }
@@ -1103,6 +1487,12 @@
             "state": "translated",
             "value": "찡그림"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "皱眉"
+          }
         }
       }
     },
@@ -1119,6 +1509,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "전체 얼굴"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "全脸"
           }
         }
       }
@@ -1137,6 +1533,12 @@
             "state": "translated",
             "value": "부드럽게 얼굴 근육을 움직여보세요"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "轻柔地活动面部肌肉"
+          }
         }
       }
     },
@@ -1153,6 +1555,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "시작하기"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "开始"
           }
         }
       }
@@ -1171,6 +1579,12 @@
             "state": "translated",
             "value": "미소 준비하세요!"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "准备好微笑！"
+          }
         }
       }
     },
@@ -1187,6 +1601,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "크게 활짝 웃어보세요"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "露出灿烂的大笑"
           }
         }
       }
@@ -1205,6 +1625,12 @@
             "state": "translated",
             "value": "돌아가기"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "返回"
+          }
         }
       }
     },
@@ -1221,6 +1647,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "한 걸음 더 나아가고 있어요!\n근육이 고마워할 거예요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "更进一步！\n你的肌肉会感谢你的。"
           }
         }
       }
@@ -1239,6 +1671,12 @@
             "state": "translated",
             "value": "잘했어요!"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "做得很好！"
+          }
         }
       }
     },
@@ -1255,6 +1693,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "새싹을 키우다"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "培育嫩芽"
           }
         }
       }
@@ -1273,6 +1717,12 @@
             "state": "translated",
             "value": "성장"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "成长"
+          }
         }
       }
     },
@@ -1289,6 +1739,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "성장률, %d%%"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "成长率，%d%%"
           }
         }
       }
@@ -1307,6 +1763,12 @@
             "state": "translated",
             "value": "회복은 경주가 아닌 여정이에요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "康复是一段旅程，而不是比赛。"
+          }
         }
       }
     },
@@ -1323,6 +1785,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "히비스커스"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "木槿花"
           }
         }
       }
@@ -1341,6 +1809,12 @@
             "state": "translated",
             "value": "각 표정을 4초간 유지하세요"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "每个表情保持4秒"
+          }
         }
       }
     },
@@ -1357,6 +1831,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "그 자세를 유지하세요!"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保持那个姿势！"
           }
         }
       }
@@ -1375,6 +1855,12 @@
             "state": "translated",
             "value": "유지 타이머"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保持计时器"
+          }
         }
       }
     },
@@ -1391,6 +1877,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "홈"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "主页"
           }
         }
       }
@@ -1409,6 +1901,12 @@
             "state": "translated",
             "value": "세트 늘리기"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "增加组数"
+          }
         }
       }
     },
@@ -1425,6 +1923,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "점점 자연스러워지고 있어요"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "越来越自然了"
           }
         }
       }
@@ -1443,6 +1947,12 @@
             "state": "translated",
             "value": "턱"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下颌"
+          }
         }
       }
     },
@@ -1459,6 +1969,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "계속 힘내세요!"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "继续加油！"
           }
         }
       }
@@ -1477,6 +1993,12 @@
             "state": "translated",
             "value": "계속 힘내세요!"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "继续加油！"
+          }
         }
       }
     },
@@ -1493,6 +2015,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "계속해보세요..."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "继续吧..."
           }
         }
       }
@@ -1511,6 +2039,12 @@
             "state": "translated",
             "value": "흐름을 이어가세요"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保持节奏"
+          }
         }
       }
     },
@@ -1527,6 +2061,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "지금 운동하고 스트릭을 이어가세요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保持你的连续记录——现在就练习。"
           }
         }
       }
@@ -1545,6 +2085,12 @@
             "state": "translated",
             "value": "라벤더"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "薰衣草"
+          }
         }
       }
     },
@@ -1561,6 +2107,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "왼쪽"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "左"
           }
         }
       }
@@ -1579,6 +2131,12 @@
             "state": "translated",
             "value": "왼쪽"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "左侧"
+          }
         }
       }
     },
@@ -1595,6 +2153,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이마에 주름이 생기도록 양쪽 눈썹을 올려보세요"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "抬起双眉，让额头出现皱纹"
           }
         }
       }
@@ -1613,6 +2177,12 @@
             "state": "translated",
             "value": "조금씩, 당신은 피어나고 있어요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一点一点地，你在绽放。"
+          }
         }
       }
     },
@@ -1629,6 +2199,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "연꽃"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "莲花"
           }
         }
       }
@@ -1647,6 +2223,12 @@
             "state": "translated",
             "value": "하안면"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下面部"
+          }
         }
       }
     },
@@ -1663,6 +2245,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "하안면"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下面部"
           }
         }
       }
@@ -1681,6 +2269,12 @@
             "state": "translated",
             "value": "하안면만"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "仅下面部"
+          }
         }
       }
     },
@@ -1697,6 +2291,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "자유롭게 움직이며 이완하세요"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自由移动并放松"
           }
         }
       }
@@ -1715,6 +2315,12 @@
             "state": "translated",
             "value": "나의 컬렉션"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "我的收藏"
+          }
         }
       }
     },
@@ -1731,6 +2337,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "다음"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下一步"
           }
         }
       }
@@ -1749,6 +2361,12 @@
             "state": "translated",
             "value": "미소가 감지되지 않았어요"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未检测到微笑"
+          }
         }
       }
     },
@@ -1765,6 +2383,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "아직 꽃이 없어요"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "还没有花朵"
           }
         }
       }
@@ -1783,6 +2407,12 @@
             "state": "translated",
             "value": "미소가 감지되지 않았어요 — 더 크게 웃어보세요!"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未检测到微笑——试着笑得更开一些！"
+          }
         }
       }
     },
@@ -1799,6 +2429,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "없음"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "无"
           }
         }
       }
@@ -1817,6 +2453,12 @@
             "state": "translated",
             "value": "세트 수"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "组数"
+          }
         }
       }
     },
@@ -1833,6 +2475,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "하나만 더!"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "还差一个！"
           }
         }
       }
@@ -1851,6 +2499,12 @@
             "state": "translated",
             "value": "목표에 한 걸음 더 가까워졌어요.\n이제 쉴 시간이에요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "离目标又近了一步。\n现在是休息时间。"
+          }
         }
       }
     },
@@ -1867,6 +2521,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "설정 열기"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开设置"
           }
         }
       }
@@ -1885,6 +2545,12 @@
             "state": "translated",
             "value": "입을 크게 벌려보세요"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "大开嘴巴"
+          }
         }
       }
     },
@@ -1901,6 +2567,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "세션, 꽃, 설정이 영구적으로 삭제됩니다."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "永久删除所有训练、花朵和设置"
           }
         }
       }
@@ -1919,6 +2591,12 @@
             "state": "translated",
             "value": "꽃 고르기"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择你的花"
+          }
         }
       }
     },
@@ -1935,6 +2613,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "꽃을 골라보세요!"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择你的花！"
           }
         }
       }
@@ -1953,6 +2637,12 @@
             "state": "translated",
             "value": "꽃 보상 고르기"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择你的花朵奖励"
+          }
         }
       }
     },
@@ -1969,6 +2659,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "추가 연습하기"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "继续练习"
           }
         }
       }
@@ -1987,6 +2683,12 @@
             "state": "translated",
             "value": "연습이 발전을 만들어요.\n올바른 길을 걷고 있어요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "练习带来进步。\n你走在正确的道路上。"
+          }
         }
       }
     },
@@ -2003,6 +2705,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "운동 더 연습하기"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "练习更多动作"
           }
         }
       }
@@ -2021,6 +2729,12 @@
             "state": "translated",
             "value": "간단한 얼굴 운동을\n연습하세요"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "练习简单的\n面部运动"
+          }
         }
       }
     },
@@ -2037,6 +2751,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "설정"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "设置"
           }
         }
       }
@@ -2055,6 +2775,12 @@
             "state": "translated",
             "value": "입꼬리를 아래로 내려주세요"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "将嘴角向下拉"
+          }
         }
       }
     },
@@ -2071,6 +2797,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "아랫입술과 입꼬리를 아래로 밀어주세요"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "将下唇和嘴角向下推"
           }
         }
       }
@@ -2089,6 +2821,12 @@
             "state": "translated",
             "value": "눈썹을 높이 올려주세요"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "高高地抬起眉毛"
+          }
         }
       }
     },
@@ -2105,6 +2843,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "미소 준비 완료"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "准备好微笑"
           }
         }
       }
@@ -2123,6 +2867,12 @@
             "state": "translated",
             "value": "초기화"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重置"
+          }
         }
       }
     },
@@ -2139,6 +2889,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "모든 데이터를 초기화할까요?"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重置所有数据？"
           }
         }
       }
@@ -2157,6 +2913,12 @@
             "state": "translated",
             "value": "모두 초기화"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "全部重置"
+          }
         }
       }
     },
@@ -2173,6 +2935,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "모든 데이터 초기화"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重置所有数据"
           }
         }
       }
@@ -2191,6 +2959,12 @@
             "state": "translated",
             "value": "모든 데이터 초기화"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重置所有数据"
+          }
         }
       }
     },
@@ -2207,6 +2981,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "오른쪽"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "右"
           }
         }
       }
@@ -2225,6 +3005,12 @@
             "state": "translated",
             "value": "오른쪽"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "右侧"
+          }
         }
       }
     },
@@ -2241,6 +3027,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "장미"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "玫瑰"
           }
         }
       }
@@ -2259,6 +3051,12 @@
             "state": "translated",
             "value": "마비된 쪽을 먼저 선택하세요"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "请先选择瘫痪侧"
+          }
         }
       }
     },
@@ -2275,6 +3073,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "하안면만 마비된 경우 선택하세요"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "如果仅下面部受影响，请选择此项"
           }
         }
       }
@@ -2293,6 +3097,12 @@
             "state": "translated",
             "value": "얼굴의 %@ 쪽이 마비된 경우 선택하세요"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "如果你面部的%@侧受到影响，请选择"
+          }
         }
       }
     },
@@ -2309,6 +3119,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "세션"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "训练次数"
           }
         }
       }
@@ -2327,6 +3143,12 @@
             "state": "translated",
             "value": "%2$lld세트 중 %1$lld번째"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%2$lld组中第%1$lld组"
+          }
         }
       }
     },
@@ -2343,6 +3165,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "건너뛰기"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "跳过"
           }
         }
       }
@@ -2361,6 +3189,12 @@
             "state": "translated",
             "value": "보정 건너뛰기, 기본 목표 사용"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "跳过校准，使用默认目标"
+          }
         }
       }
     },
@@ -2377,6 +3211,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이 세트 건너뛰기"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "跳过这组"
           }
         }
       }
@@ -2395,6 +3235,12 @@
             "state": "translated",
             "value": "미소"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "微笑"
+          }
         }
       }
     },
@@ -2411,6 +3257,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "미소 보정"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "微笑校准"
           }
         }
       }
@@ -2429,6 +3281,12 @@
             "state": "translated",
             "value": "최대한 크게 웃어주세요!"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "尽可能地大笑！"
+          }
         }
       }
     },
@@ -2445,6 +3303,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "정말 자랑스러워요!"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "真为你骄傲！"
           }
         }
       }
@@ -2463,6 +3327,12 @@
             "state": "translated",
             "value": "어떤 날은 거울을 보는 것이\n힘들기도 해요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "有些日子，照镜子\n是件难事。"
+          }
         }
       }
     },
@@ -2479,6 +3349,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "양쪽 입꼬리를 넓게 펼쳐보세요"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "将两侧嘴角大幅展开"
           }
         }
       }
@@ -2497,6 +3373,12 @@
             "state": "translated",
             "value": "눈을 부드럽게 꼭 감아보세요"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "轻轻地紧闭双眼"
+          }
         }
       }
     },
@@ -2513,6 +3395,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "시작"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "开始"
           }
         }
       }
@@ -2531,6 +3419,12 @@
             "state": "translated",
             "value": "%@ 운동 시작하기"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "开始%@练习"
+          }
         }
       }
     },
@@ -2547,6 +3441,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "훈련을 시작하세요"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "开始你的训练"
           }
         }
       }
@@ -2565,6 +3465,12 @@
             "state": "translated",
             "value": "곧 시작합니다..."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "即将开始..."
+          }
         }
       }
     },
@@ -2581,6 +3487,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "해바라기"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "向日葵"
           }
         }
       }
@@ -2599,6 +3511,12 @@
             "state": "translated",
             "value": "잠시 쉬어가세요..."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "稍作休息..."
+          }
         }
       }
     },
@@ -2615,6 +3533,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "천천히 하세요.\n충분히 쉴 자격이 있어요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "慢慢来。\n你值得休息。"
           }
         }
       }
@@ -2633,6 +3557,12 @@
             "state": "translated",
             "value": "자신을 돌보는 것은 선물이에요.\n여정을 계속 믿어주세요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "照顾好自己是一份礼物。\n继续相信你的旅程。"
+          }
         }
       }
     },
@@ -2649,6 +3579,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "5초 미소 촬영을 시작하려면 탭하세요"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "点击开始5秒微笑捕捉"
           }
         }
       }
@@ -2667,6 +3603,12 @@
             "state": "translated",
             "value": "현재 세트를 건너뛰려면 탭하세요"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "点击跳过当前组"
+          }
         }
       }
     },
@@ -2683,6 +3625,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "꽃봉오리가 피어나려 해요\n자연스러운 움직임이\n꽃을 피울 거예요"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "花蕾即将绽放\n自然的动作\n会让它盛开"
           }
         }
       }
@@ -2701,6 +3649,12 @@
             "state": "translated",
             "value": "새싹이 햇빛을 향해 뻗어가고 있어요\n따뜻한 표정으로\n힘을 주세요"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "嫩芽正在追寻阳光\n用温暖的表情\n给它力量"
+          }
         }
       }
     },
@@ -2717,6 +3671,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이번 주"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本周"
           }
         }
       }
@@ -2735,6 +3695,12 @@
             "state": "translated",
             "value": "이 기기는 얼굴 추적을 지원하지 않아요.\nTrueDepth 카메라가 있는 기기를 사용해 주세요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此设备不支持面部追踪。\n请使用配备TrueDepth相机的设备。"
+          }
         }
       }
     },
@@ -2751,6 +3717,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이번 주"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本周"
           }
         }
       }
@@ -2769,6 +3741,12 @@
             "state": "translated",
             "value": "오늘의 진행 상황, 총 %2$lld개 중 %1$lld개 완료"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今日进度，共%2$lld个中完成%1$lld个"
+          }
         }
       }
     },
@@ -2785,6 +3763,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "나의 성장을 확인하세요"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "追踪你的进步"
           }
         }
       }
@@ -2803,6 +3787,12 @@
             "state": "translated",
             "value": "다시 시도"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "再试一次"
+          }
         }
       }
     },
@@ -2819,6 +3809,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "튤립"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "郁金香"
           }
         }
       }
@@ -2837,6 +3833,12 @@
             "state": "translated",
             "value": "미소를 깨워보세요"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "唤醒你的微笑"
+          }
         }
       }
     },
@@ -2853,6 +3855,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "미소가 점점\n강해지는 걸 지켜보세요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "看着你的微笑\n变得更有力。"
           }
         }
       }
@@ -2871,6 +3879,12 @@
             "state": "translated",
             "value": "미소를 감지하지 못했어요.\n다시 시도하거나 건너뛰어 기본 설정을 사용하세요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未能捕捉到你的微笑。\n请再试一次或跳过以使用默认设置。"
+          }
         }
       }
     },
@@ -2887,6 +3901,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "운동 중 건강한 쪽을\n거울처럼 가이드로 보여드릴게요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "我们将在练习中\n镜像你健康的一侧作为引导。"
           }
         }
       }
@@ -2905,6 +3925,12 @@
             "state": "translated",
             "value": "아래 버튼을 누르면\n5초 동안 최대한 크게 웃어주세요.\n개인 목표를 설정하는 데 사용할게요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "按下面的按钮后，\n尽可能地大笑5秒钟。\n我们将用它来设定你的个人目标。"
+          }
         }
       }
     },
@@ -2921,6 +3947,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "자신의 미소가\n멀게만 느껴질 때."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "当自己的微笑\n感觉遥不可及时。"
           }
         }
       }
@@ -2939,6 +3971,12 @@
             "state": "translated",
             "value": "어떤 운동을 연습하고 싶으세요?"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你想练习哪个动作？"
+          }
         }
       }
     },
@@ -2955,6 +3993,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "어느 쪽이 마비되었나요?"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "哪侧受到了影响？"
           }
         }
       }
@@ -2973,6 +4017,12 @@
             "state": "translated",
             "value": "훌륭해요!"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "太棒了！"
+          }
         }
       }
     },
@@ -2989,6 +4039,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "나중에 설정에서\n변경할 수 있어요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你可以稍后\n在设置中更改。"
           }
         }
       }
@@ -3007,6 +4063,12 @@
             "state": "translated",
             "value": "해냈어요!\n내일 만나요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你做到了！\n明天见。"
+          }
         }
       }
     },
@@ -3023,6 +4085,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "꽃을 획득했어요!"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你获得了一朵花！"
           }
         }
       }
@@ -3041,6 +4109,12 @@
             "state": "translated",
             "value": "정말 열심이시네요!"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你真是太投入了！"
+          }
         }
       }
     },
@@ -3057,6 +4131,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "몸이 풀리고 있어요"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正在热身中"
           }
         }
       }
@@ -3075,6 +4155,12 @@
             "state": "translated",
             "value": "성장을 잘 가꿨어요.\n편히 쉬세요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你已经精心培育了自己的成长。\n好好休息吧。"
+          }
         }
       }
     },
@@ -3091,6 +4177,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "나의 성장"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你的进步"
           }
         }
       }
@@ -3109,6 +4201,12 @@
             "state": "translated",
             "value": "미래의 미소가 당신에게 고마워해요.\n내일 만나요!"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未来的微笑在感谢你。\n明天见！"
+          }
         }
       }
     },
@@ -3125,6 +4223,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "당신의 움직임이 자라고 있어요"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你的动作在进步"
           }
         }
       }
@@ -3143,6 +4247,12 @@
             "state": "translated",
             "value": "당신의 발전이 아름다워요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你的进步是美丽的。"
+          }
         }
       }
     },
@@ -3159,6 +4269,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "세션, 꽃, 설정이 영구적으로 삭제됩니다. 되돌릴 수 없어요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你的训练、花朵和设置将被永久删除。此操作无法撤销。"
           }
         }
       }
@@ -3177,6 +4293,12 @@
             "state": "translated",
             "value": "당신의 힘이 빛나고 있어요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你的力量在闪耀。"
+          }
         }
       }
     },
@@ -3193,6 +4315,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "완료됨"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已完成"
           }
         }
       }
@@ -3211,6 +4339,12 @@
             "state": "translated",
             "value": "완료"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "完成"
+          }
         }
       }
     },
@@ -3228,6 +4362,12 @@
             "state": "translated",
             "value": "아직 미완료"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "尚未完成"
+          }
         }
       }
     },
@@ -3244,6 +4384,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "다음 순서"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下一个"
           }
         }
       }
