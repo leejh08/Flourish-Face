@@ -83,11 +83,11 @@ struct LogStreakCard: View {
                     let date = dateForWeekday(i)
                     return hasCompletedAllOnDate(date) ? Self.weekdayFormatter.string(from: date) : nil
                 }
-                let summary = "\(daysCompletedThisWeek) of 7 days completed"
+                let summary = String(format: String(localized: "%lld of 7 days completed"), daysCompletedThisWeek)
                 if completed.isEmpty {
                     return summary
                 }
-                return "\(summary). \(completed.joined(separator: ", ")) done"
+                return "\(summary). \(completed.joined(separator: ", ")) \(String(localized: "done"))"
             }())
             .padding(.vertical, 8)
 

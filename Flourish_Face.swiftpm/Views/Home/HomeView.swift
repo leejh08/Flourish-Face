@@ -314,7 +314,7 @@ struct HomeView: View {
                     )
                 }
                 .accessibilityLabel(buttonText)
-                .accessibilityHint("Start \(exercise.guide) exercise")
+                .accessibilityHint(String(format: String(localized: "Start %@ exercise"), exercise.guide))
             }
         }
     }

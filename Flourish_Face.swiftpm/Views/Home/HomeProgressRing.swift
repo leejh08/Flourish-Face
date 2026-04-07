@@ -58,6 +58,6 @@ struct HomeProgressRing: View {
             }
         }
         .accessibilityElement(children: .ignore)
-        .accessibilityLabel("Today's progress, \(todayCompletedExercisesCount) of \(totalExercises) exercises complete")
+        .accessibilityLabel(String(format: String(localized: "Today's progress, %lld of %lld exercises complete"), todayCompletedExercisesCount, totalExercises))
     }
 }

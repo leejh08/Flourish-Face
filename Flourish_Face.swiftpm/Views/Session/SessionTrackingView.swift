@@ -75,7 +75,7 @@ struct SessionTrackingView: View {
                         .padding(.horizontal, 16)
                         .padding(.vertical, 8)
                         .background(Capsule().fill(Color.mintGreen.opacity(0.3)))
-                        .accessibilityLabel("Set \(manager.currentSet) of \(manager.totalSets)")
+                        .accessibilityLabel(String(format: String(localized: "Set %lld of %lld"), manager.currentSet, manager.totalSets))
                 }
                 .padding(.horizontal, 16)
                 .padding(.vertical, 12)
@@ -99,7 +99,7 @@ struct SessionTrackingView: View {
                         .foregroundStyle(scoreColor)
                         .contentTransition(.numericText())
                         .animation(.easeInOut(duration: 0.1), value: Int(manager.growthRate * 100))
-                        .accessibilityLabel("Growth rate, \(Int(manager.growthRate * 100)) percent")
+                        .accessibilityLabel(String(format: String(localized: "Growth rate, %d percent"), Int(manager.growthRate * 100)))
 
                     ZStack(alignment: .leading) {
                         RoundedRectangle(cornerRadius: 4)
@@ -112,7 +112,7 @@ struct SessionTrackingView: View {
                     }
                     .accessibilityElement(children: .ignore)
                     .accessibilityLabel("Hold timer")
-                    .accessibilityValue("\(String(format: "%.1f", manager.aboveThresholdDuration)) of \(Int(TrackingConfig.holdRequired)) seconds")
+                    .accessibilityValue(String(format: String(localized: "%@ of %d seconds"), String(format: "%.1f", manager.aboveThresholdDuration), Int(TrackingConfig.holdRequired)))
 
                     Text(scoreLabel)
                         .font(.system(.caption, design: .rounded))
