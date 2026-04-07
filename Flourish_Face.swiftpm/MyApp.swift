@@ -3,6 +3,10 @@ import SwiftData
 
 @main
 struct MyApp: App {
+    init() {
+        NotificationManager.shared.requestPermission()
+    }
+
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([GrowthSession.self, Flower.self])
         let modelConfiguration = ModelConfiguration(
