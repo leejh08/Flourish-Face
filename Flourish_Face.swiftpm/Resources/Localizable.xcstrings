@@ -1,6 +1,40 @@
 {
   "sourceLanguage": "en",
   "strings": {
+    "%@ of %d seconds": {
+      "comment": "SessionTrackingView VoiceOver value for hold timer",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%2$d秒中%1$@秒"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%2$d초 중 %1$@초"
+          }
+        }
+      }
+    },
+    "%@ side affected": {
+      "comment": "SideButton VoiceOver label, %@ is Left/Right (localized)",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@側がマヒ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 쪽 마비"
+          }
+        }
+      }
+    },
     "%lld Sets": {
       "comment": "SessionIntroView: number of sets display",
       "localizations": {
@@ -1242,6 +1276,23 @@
         }
       }
     },
+    "Growth rate, %d percent": {
+      "comment": "SessionTrackingView VoiceOver label for growth percentage",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "成長率、%d%%"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "성장률, %d%%"
+          }
+        }
+      }
+    },
     "Healing is a journey, not a race.": {
       "comment": "HomeView daily quote (Tuesday)",
       "localizations": {
@@ -1837,6 +1888,23 @@
         }
       }
     },
+    "Permanently deletes all sessions, flowers, and settings": {
+      "comment": "LogSettingsCard VoiceOver hint for reset button",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "セッション、花、設定が完全に削除されます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "세션, 꽃, 설정이 영구적으로 삭제됩니다."
+          }
+        }
+      }
+    },
     "Pick Your Flower": {
       "comment": "HomeView / RestView flower pick button",
       "localizations": {
@@ -2092,6 +2160,23 @@
         }
       }
     },
+    "Reset all data": {
+      "comment": "LogSettingsCard VoiceOver label for reset button",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "すべてのデータをリセット"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "모든 데이터 초기화"
+          }
+        }
+      }
+    },
     "Reset everything": {
       "comment": "LogSettingsCard reset section subtitle",
       "localizations": {
@@ -2194,6 +2279,23 @@
         }
       }
     },
+    "Select if the %@ side of your face is affected": {
+      "comment": "SideButton VoiceOver hint, %@ is left/right (localized, lowercase)",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "顔の%@側がマヒしている場合は選択してください"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "얼굴의 %@ 쪽이 마비된 경우 선택하세요"
+          }
+        }
+      }
+    },
     "Sessions": {
       "comment": "LogStreakCard stat box label",
       "localizations": {
@@ -2207,6 +2309,23 @@
           "stringUnit": {
             "state": "translated",
             "value": "세션"
+          }
+        }
+      }
+    },
+    "Set %lld of %lld": {
+      "comment": "SessionTrackingView VoiceOver label for current set",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%2$lld セット中 %1$lld セット目"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%2$lld세트 중 %1$lld번째"
           }
         }
       }
@@ -2394,6 +2513,23 @@
           "stringUnit": {
             "state": "translated",
             "value": "시작"
+          }
+        }
+      }
+    },
+    "Start %@ exercise": {
+      "comment": "HomeView VoiceOver hint for start button, %@ is exercise guide text",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@エクササイズを始める"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 운동 시작하기"
           }
         }
       }
@@ -2598,6 +2734,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "이 기기는 얼굴 추적을 지원하지 않아요.\nTrueDepth 카메라가 있는 기기를 사용해 주세요."
+          }
+        }
+      }
+    },
+    "This week": {
+      "comment": "LogStreakCard VoiceOver label for weekly calendar",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今週"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이번 주"
+          }
+        }
+      }
+    },
+    "Today's progress, %lld of %lld exercises complete": {
+      "comment": "HomeProgressRing VoiceOver label",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今日の進捗、%2$lld個中%1$lld個完了"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오늘의 진행 상황, 총 %2$lld개 중 %1$lld개 완료"
           }
         }
       }
@@ -3023,6 +3193,23 @@
           "stringUnit": {
             "state": "translated",
             "value": "완료됨"
+          }
+        }
+      }
+    },
+    "done": {
+      "comment": "LogStreakCard VoiceOver value suffix for completed weekdays",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "完了"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "완료"
           }
         }
       }
