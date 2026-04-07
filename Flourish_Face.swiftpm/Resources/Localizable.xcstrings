@@ -134,7 +134,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "已完成 %lld 次"
+            "value": "累计完成 %lld 次"
           }
         }
       }
@@ -295,7 +295,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "瘫痪侧"
+            "value": "患侧设置"
           }
         }
       }
@@ -939,7 +939,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "危险区域"
+            "value": "数据管理"
           }
         }
       }
@@ -985,7 +985,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "难度"
+            "value": "训练难度"
           }
         }
       }
@@ -1468,7 +1468,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "花朵"
+            "value": "获得花朵"
           }
         }
       }
@@ -4182,7 +4182,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "你的进步"
+            "value": "我的进度"
           }
         }
       }
