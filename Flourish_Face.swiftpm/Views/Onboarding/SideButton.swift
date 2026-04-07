@@ -82,8 +82,8 @@ struct SideButton: View {
             )
             .scaleEffect(isPressed ? 0.95 : 1.0)
         }
-        .accessibilityLabel("\(title) side affected")
-        .accessibilityHint("Select if the \(title.lowercased()) side of your face is affected")
+        .accessibilityLabel(String(format: String(localized: "%@ side affected"), String(localized: String.LocalizationValue(title))))
+        .accessibilityHint(String(format: String(localized: "Select if the %@ side of your face is affected"), String(localized: String.LocalizationValue(title.lowercased()))))
         .accessibilityAddTraits(isSelected ? .isSelected : [])
         .buttonStyle(.plain)
         .pressEvents {
