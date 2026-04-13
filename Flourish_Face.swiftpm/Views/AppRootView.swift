@@ -3,21 +3,23 @@ import SwiftData
 
 struct AppRootView: View {
     @Environment(\.modelContext) private var modelContext
-    @State private var selectedTab = 0
-    @State private var showFlowerPicker = false
-    @State private var newlyAddedFlowerType: FlowerType? = nil
+    @State private var shellState = AppRootShellState()
     @AppStorage(AppStorageKeys.pendingFlowerPick) private var pendingFlowerPick: Bool = false
     @AppStorage(AppStorageKeys.hasCompletedOnboarding) private var hasCompletedOnboarding: Bool = false
     @AppStorage(AppStorageKeys.hasCompletedIntro) private var hasCompletedIntro: Bool = false
 
     var body: some View {
         ZStack {
-            if hasCompletedOnboarding {
+            switch AppRootRoute(
+                hasCompletedIntro: hasCompletedIntro,
+                hasCompletedOnboarding: hasCompletedOnboarding
+            ) {
+            case .mainContent:
                 mainContent
-            } else if !hasCompletedIntro {
+            case .intro:
                 IntroView(hasCompletedIntro: $hasCompletedIntro)
                     .transition(.opacity)
-            } else {
+            case .onboarding:
                 OnboardingView(hasCompletedOnboarding: $hasCompletedOnboarding)
                     .transition(.opacity)
             }
@@ -26,21 +28,21 @@ struct AppRootView: View {
         .animation(.easeInOut(duration: 0.5), value: hasCompletedOnboarding)
         .onChange(of: hasCompletedOnboarding) { _, completed in
             if completed {
-                selectedTab = 0
+                shellState.handleOnboardingCompletion()
             }
         }
     }
 
     private var mainContent: some View {
         ZStack {
-            TabView(selection: $selectedTab) {
-                HomeView(showFlowerPicker: $showFlowerPicker)
+            TabView(selection: $shellState.selectedTab) {
+                HomeView(showFlowerPicker: $shellState.showFlowerPicker)
                     .tabItem {
                         Label("Home", systemImage: "house.fill")
                     }
                     .tag(0)
 
-                CollectionView(newlyAddedFlowerType: $newlyAddedFlowerType)
+                CollectionView(newlyAddedFlowerType: $shellState.newlyAddedFlowerType)
                     .tabItem {
                         Label("Collection", systemImage: "star.fill")
                     }
@@ -54,22 +56,19 @@ struct AppRootView: View {
             }
             .tint(Color.primaryGreen)
 
-            if showFlowerPicker {
+            if shellState.showFlowerPicker {
                 FlowerPickerView { selectedFlower in
-                    let flower = Flower(type: selectedFlower)
-                    modelContext.insert(flower)
-                    pendingFlowerPick = false
-                    newlyAddedFlowerType = selectedFlower
-                    showFlowerPicker = false
-                    selectedTab = 1
+                    shellState.claimFlowerReward(
+                        selectedFlower,
+                        pendingFlowerPick: &pendingFlowerPick,
+                        modelContext: modelContext
+                    )
                 }
                 .transition(.opacity)
             }
         }
         .onAppear {
-            if pendingFlowerPick {
-                showFlowerPicker = true
-            }
+            shellState.syncPendingFlowerReward(pendingFlowerPick)
         }
     }
 }
