@@ -32,11 +32,11 @@ struct AppRootShellState {
 
     mutating func claimFlowerReward(
         _ selectedFlower: FlowerType,
-        pendingFlowerPick: inout Bool,
+        dailyProgressState: inout DailyProgressState,
         modelContext: ModelContext
     ) {
         modelContext.insert(Flower(type: selectedFlower))
-        pendingFlowerPick = false
+        dailyProgressState.consumePendingFlowerReward()
         newlyAddedFlowerType = selectedFlower
         showFlowerPicker = false
         selectedTab = 1
@@ -50,11 +50,19 @@ enum AppResetAction {
     ) {
         NotificationManager.shared.cancelAll()
 
-        userDefaults.set("", forKey: AppStorageKeys.todayCompletedExercisesData)
-        userDefaults.set("", forKey: AppStorageKeys.lastExerciseDate)
+        var progressState = DailyProgressState(
+            completedExercisesData: userDefaults.string(forKey: AppStorageKeys.todayCompletedExercisesData) ?? "",
+            lastExerciseDate: userDefaults.string(forKey: AppStorageKeys.lastExerciseDate) ?? "",
+            flowersEarned: userDefaults.integer(forKey: AppStorageKeys.flowersEarned),
+            pendingFlowerPick: userDefaults.bool(forKey: AppStorageKeys.pendingFlowerPick)
+        )
+        progressState.reset()
+
+        userDefaults.set(progressState.completedExercisesData, forKey: AppStorageKeys.todayCompletedExercisesData)
+        userDefaults.set(progressState.lastExerciseDate, forKey: AppStorageKeys.lastExerciseDate)
         userDefaults.set(0.0, forKey: AppStorageKeys.totalGrowthPoints)
-        userDefaults.set(0, forKey: AppStorageKeys.flowersEarned)
-        userDefaults.set(false, forKey: AppStorageKeys.pendingFlowerPick)
+        userDefaults.set(progressState.flowersEarned, forKey: AppStorageKeys.flowersEarned)
+        userDefaults.set(progressState.pendingFlowerPick, forKey: AppStorageKeys.pendingFlowerPick)
         userDefaults.set(AffectedSide.none.rawValue, forKey: AppStorageKeys.affectedSide)
         userDefaults.set(Difficulty.basic.rawValue, forKey: AppStorageKeys.selectedDifficulty)
         userDefaults.set(false, forKey: AppStorageKeys.hasCompletedOnboarding)
