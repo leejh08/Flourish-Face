@@ -5,45 +5,53 @@ extension SessionView {
     func saveSession() {
         manager.stopTracking()
 
-        if isBonus {
-            let session = GrowthSession(date: Date(), exerciseRaw: exercise.rawValue)
-            modelContext.insert(session)
-            return
-        }
-
-        saveExerciseToAppStorage()
-        totalGrowthPoints += manager.totalGrowthAccumulated
-
         let session = GrowthSession(date: Date(), exerciseRaw: exercise.rawValue)
         modelContext.insert(session)
 
-        let completedSet = getCompletedExercisesFromAppStorage()
-        if completedSet.count >= requiredExerciseCount {
-            var previousSet = completedSet
-            previousSet.remove(exercise.rawValue)
-            if previousSet.count < requiredExerciseCount {
-                appFlowersEarned += 1
-                pendingFlowerPick = true
-                NotificationManager.shared.cancelStreakReminder()
-            }
+        if isBonus {
+            return
+        }
+
+        totalGrowthPoints += manager.totalGrowthAccumulated
+
+        var progressState = dailyProgressState
+        let reminderPolicy = progressState.recordCompletedExercise(
+            exercise.rawValue,
+            requiredExerciseCount: requiredExerciseCount
+        )
+        storeDailyProgressState(progressState)
+
+        if let reminderPolicy {
+            apply(reminderPolicy)
         }
     }
 
-    func saveExerciseToAppStorage() {
-        let todayString = AppStorageKeys.todayString()
-
-        if lastExerciseDate != todayString {
-            todayCompletedExercisesData = ""
-            lastExerciseDate = todayString
-        }
-
-        var exercises = AppStorageKeys.parseCompletedExercises(todayCompletedExercisesData)
-        exercises.insert(exercise.rawValue)
-        todayCompletedExercisesData = AppStorageKeys.encodeCompletedExercises(exercises)
+    private var dailyProgressState: DailyProgressState {
+        DailyProgressState(
+            completedExercisesData: todayCompletedExercisesData,
+            lastExerciseDate: lastExerciseDate,
+            flowersEarned: appFlowersEarned,
+            pendingFlowerPick: pendingFlowerPick
+        )
     }
 
     func getCompletedExercisesFromAppStorage() -> Set<Int> {
-        guard lastExerciseDate == AppStorageKeys.todayString() else { return [] }
-        return AppStorageKeys.parseCompletedExercises(todayCompletedExercisesData)
+        dailyProgressState.normalizedForToday().completedExercises()
+    }
+
+    private func storeDailyProgressState(_ state: DailyProgressState) {
+        todayCompletedExercisesData = state.completedExercisesData
+        lastExerciseDate = state.lastExerciseDate
+        appFlowersEarned = state.flowersEarned
+        pendingFlowerPick = state.pendingFlowerPick
+    }
+
+    private func apply(_ reminderPolicy: DailyReminderPolicy) {
+        switch reminderPolicy {
+        case .schedule:
+            NotificationManager.shared.scheduleStreakReminder()
+        case .cancel:
+            NotificationManager.shared.cancelStreakReminder()
+        }
     }
 }

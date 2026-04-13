@@ -60,13 +60,29 @@ struct HomeView: View {
         FaceExercise.exercises(for: currentDifficulty)
     }
 
+    private var dailyProgressState: DailyProgressState {
+        DailyProgressState(
+            completedExercisesData: todayCompletedExercisesData,
+            lastExerciseDate: lastExerciseDate,
+            flowersEarned: flowersEarned,
+            pendingFlowerPick: pendingFlowerPick
+        )
+    }
+
+    private var todayProgressState: DailyProgressState {
+        dailyProgressState.normalizedForToday()
+    }
+
     private var todayCompletedExercises: Set<Int> {
-        guard lastExerciseDate == AppStorageKeys.todayString() else { return [] }
-        return AppStorageKeys.parseCompletedExercises(todayCompletedExercisesData)
+        todayProgressState.completedExercises()
     }
 
     private var isTodayComplete: Bool {
-        todayCompletedExercises.count >= currentExercises.count
+        todayProgressState.isTodayComplete(requiredExerciseCount: currentExercises.count)
+    }
+
+    private var hasPendingFlowerReward: Bool {
+        todayProgressState.hasPendingFlowerReward
     }
 
     private var nextExercise: FaceExercise? {
@@ -146,31 +162,16 @@ struct HomeView: View {
                 SessionView(chapter: config.chapter, exercise: config.exercise, isBonus: config.isBonus, totalSets: config.totalSets, navigationPath: $navigationPath)
             }
             .onAppear {
-                checkAndResetForNewDay()
+                syncDailyProgressState()
                 startBackgroundAnimations()
 
                 let quotes = getQuotesForToday()
                 dailyQuote = quotes.motivational
                 completionQuote = quotes.completion
-
-                if isTodayComplete {
-                    NotificationManager.shared.cancelStreakReminder()
-                } else {
-                    NotificationManager.shared.scheduleStreakReminder()
-                }
-
-                if pendingFlowerPick {
-                    showFlowerPicker = true
-                }
             }
             .onChange(of: navigationPath) { _, newPath in
                 if newPath.isEmpty {
-                    checkAndResetForNewDay()
-                    if pendingFlowerPick {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + Delay.flowerPicker) {
-                            showFlowerPicker = true
-                        }
-                    }
+                    syncDailyProgressState(presentPendingFlowerAfter: Delay.flowerPicker)
                 }
             }
             .sheet(isPresented: $showSetPicker) {
@@ -219,9 +220,9 @@ struct HomeView: View {
 
     private var startButton: some View {
         Group {
-            if pendingFlowerPick {
+            if hasPendingFlowerReward {
                 Button {
-                    showFlowerPicker = true
+                    presentPendingFlowerPicker()
                 } label: {
                     HStack(spacing: 10) {
                         Text("🌸")
@@ -351,12 +352,40 @@ struct HomeView: View {
         }
     }
 
-    private func checkAndResetForNewDay() {
-        let todayString = AppStorageKeys.todayString()
-        if lastExerciseDate != todayString {
-            todayCompletedExercisesData = ""
-            lastExerciseDate = todayString
+    private func syncDailyProgressState(presentPendingFlowerAfter delay: TimeInterval? = nil) {
+        let state = dailyProgressState.normalizedForToday()
+        storeDailyProgressState(state)
+        apply(state.reminderPolicy(requiredExerciseCount: currentExercises.count))
+
+        if state.hasPendingFlowerReward {
+            presentPendingFlowerPicker(after: delay)
         }
     }
 
+    private func storeDailyProgressState(_ state: DailyProgressState) {
+        todayCompletedExercisesData = state.completedExercisesData
+        lastExerciseDate = state.lastExerciseDate
+        flowersEarned = state.flowersEarned
+        pendingFlowerPick = state.pendingFlowerPick
+    }
+
+    private func presentPendingFlowerPicker(after delay: TimeInterval? = nil) {
+        guard let delay else {
+            showFlowerPicker = true
+            return
+        }
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+            showFlowerPicker = true
+        }
+    }
+
+    private func apply(_ reminderPolicy: DailyReminderPolicy) {
+        switch reminderPolicy {
+        case .schedule:
+            NotificationManager.shared.scheduleStreakReminder()
+        case .cancel:
+            NotificationManager.shared.cancelStreakReminder()
+        }
+    }
 }

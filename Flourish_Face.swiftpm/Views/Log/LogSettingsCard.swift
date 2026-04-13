@@ -213,11 +213,12 @@ struct LogSettingsCard: View {
 
     private func resetAllData() {
         NotificationManager.shared.cancelAll()
-        todayCompletedExercisesData = ""
-        lastExerciseDate = ""
+
+        var progressState = dailyProgressState
+        progressState.reset()
+        storeDailyProgressState(progressState)
+
         totalGrowthPoints = 0
-        flowersEarned = 0
-        pendingFlowerPick = false
         hasCompletedOnboarding = false
         hasCompletedIntro = false
         affectedSide = .none
@@ -227,5 +228,21 @@ struct LogSettingsCard: View {
         do {
             try modelContext.delete(model: GrowthSession.self)
         } catch { }
+    }
+
+    private var dailyProgressState: DailyProgressState {
+        DailyProgressState(
+            completedExercisesData: todayCompletedExercisesData,
+            lastExerciseDate: lastExerciseDate,
+            flowersEarned: flowersEarned,
+            pendingFlowerPick: pendingFlowerPick
+        )
+    }
+
+    private func storeDailyProgressState(_ state: DailyProgressState) {
+        todayCompletedExercisesData = state.completedExercisesData
+        lastExerciseDate = state.lastExerciseDate
+        flowersEarned = state.flowersEarned
+        pendingFlowerPick = state.pendingFlowerPick
     }
 }
