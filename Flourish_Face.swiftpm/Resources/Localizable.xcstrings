@@ -82,7 +82,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "꽃 %lld송이 수집"
+            "value": "꽃 %lld송이를 모았어요"
           }
         },
         "zh-Hans": {
@@ -772,7 +772,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "컬렉션"
+            "value": "수집"
           }
         },
         "zh-Hans": {
@@ -2221,7 +2221,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "하안면"
+            "value": "아래쪽"
           }
         },
         "zh-Hans": {
@@ -2244,7 +2244,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "하안면"
+            "value": "아래쪽 얼굴"
           }
         },
         "zh-Hans": {
@@ -2267,7 +2267,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "하안면만"
+            "value": "아래쪽 얼굴만"
           }
         },
         "zh-Hans": {
@@ -2313,13 +2313,36 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "나의 컬렉션"
+            "value": "내가 모은 꽃"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
             "value": "我的收藏"
+          }
+        }
+      }
+    },
+    "Your first flower is waiting": {
+      "comment": "CollectionView header subtitle when there are no collected flowers",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最初の花を待っています"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "첫 꽃을 기다리고 있어요"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正在等待你的第一朵花"
           }
         }
       }
@@ -2389,6 +2412,29 @@
           "stringUnit": {
             "state": "translated",
             "value": "还没有花朵"
+          }
+        }
+      }
+    },
+    "Complete all %lld exercises daily\nto earn flowers": {
+      "comment": "CollectionView empty state description, %lld is required daily exercise count",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "毎日%lld個のエクササイズをすべて完了すると\n花を受け取れます"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "매일 운동 %lld개를 모두 완료하면\n꽃을 받을 수 있어요"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "每天完成 %lld 个练习后\n就能获得花朵"
           }
         }
       }
@@ -3072,7 +3118,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "하안면만 마비된 경우 선택하세요"
+            "value": "아래쪽 얼굴만 마비된 경우 선택하세요"
           }
         },
         "zh-Hans": {

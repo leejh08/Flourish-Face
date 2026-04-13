@@ -26,6 +26,24 @@ struct CollectionView: View {
         }.sorted(by: { $0.flower.earnedDate > $1.flower.earnedDate })
     }
 
+    private var headerSubtitle: String {
+        if flowers.isEmpty {
+            return String(localized: "Your first flower is waiting")
+        }
+
+        return String.localizedStringWithFormat(
+            String(localized: "%lld flowers collected"),
+            flowers.count
+        )
+    }
+
+    private var emptyStateDescription: String {
+        String.localizedStringWithFormat(
+            String(localized: "Complete all %lld exercises daily\nto earn flowers"),
+            requiredExerciseCount
+        )
+    }
+
     var body: some View {
         ZStack {
             LinearGradient(
@@ -42,7 +60,7 @@ struct CollectionView: View {
                             .font(.system(size: 28, weight: .bold, design: .rounded))
                             .foregroundStyle(.white)
 
-                        Text("\(flowers.count) flowers collected")
+                        Text(headerSubtitle)
                             .font(.system(.subheadline, design: .rounded))
                             .foregroundStyle(.white.opacity(0.6))
                     }
@@ -64,7 +82,7 @@ struct CollectionView: View {
                             .fontWeight(.medium)
                             .foregroundStyle(.white.opacity(0.8))
 
-                        Text("Complete all \(requiredExerciseCount) exercises daily\nto earn flowers")
+                        Text(emptyStateDescription)
                             .font(.system(.subheadline, design: .rounded))
                             .foregroundStyle(.white.opacity(0.5))
                             .multilineTextAlignment(.center)

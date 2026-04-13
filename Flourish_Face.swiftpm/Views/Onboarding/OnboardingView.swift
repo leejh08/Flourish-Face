@@ -76,7 +76,7 @@ struct OnboardingView: View {
                 Button {
                     withAnimation { currentPage = min(currentPage + 1, totalPages - 1) }
                 } label: {
-                    Text("Next")
+                    Text(String(localized: "Next"))
                         .font(.system(.subheadline, design: .rounded))
                         .foregroundStyle(.white.opacity(0.4))
                 }

@@ -3,8 +3,8 @@ import SwiftUI
 struct OnboardingPage: View {
     let icon: String
     let iconColor: Color
-    let title: String
-    let subtitle: String
+    let title: LocalizedStringKey
+    let subtitle: LocalizedStringKey
 
     @State private var appeared = false
     @State private var iconScale: CGFloat = 0.5
