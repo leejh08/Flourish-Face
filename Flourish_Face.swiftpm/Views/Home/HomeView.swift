@@ -52,47 +52,16 @@ struct HomeView: View {
     @AppStorage(AppStorageKeys.affectedSide) private var affectedSide: AffectedSide = .none
     @AppStorage(AppStorageKeys.selectedDifficulty) private var selectedDifficulty: String = Difficulty.basic.rawValue
 
-    private var currentDifficulty: Difficulty {
-        Difficulty(rawValue: selectedDifficulty) ?? .basic
-    }
-
-    private var currentExercises: [FaceExercise] {
-        FaceExercise.exercises(for: currentDifficulty)
-    }
-
-    private var todayCompletedExercises: Set<Int> {
-        guard lastExerciseDate == AppStorageKeys.todayString() else { return [] }
-        return AppStorageKeys.parseCompletedExercises(todayCompletedExercisesData)
-    }
-
-    private var isTodayComplete: Bool {
-        todayCompletedExercises.count >= currentExercises.count
-    }
-
-    private var nextExercise: FaceExercise? {
-        for exercise in currentExercises {
-            if !todayCompletedExercises.contains(exercise.rawValue) {
-                return exercise
-            }
-        }
-        return nil
-    }
-
-    private var currentChapter: Chapter {
-        switch totalGrowthPoints {
-        case 0..<20: return .seed
-        case 20..<50: return .sprout
-        case 50..<100: return .bloom
-        default: return .breeze
-        }
-    }
-
-    private var displayMessage: String {
-        if isTodayComplete {
-            return completionQuote.isEmpty ? String(localized: "You did it!\nSee you tomorrow.") : completionQuote
-        } else {
-            return dailyQuote
-        }
+    private var derivedState: HomeDerivedState {
+        HomeDerivedState(
+            selectedDifficulty: selectedDifficulty,
+            totalGrowthPoints: totalGrowthPoints,
+            todayCompletedExercisesData: todayCompletedExercisesData,
+            lastExerciseDate: lastExerciseDate,
+            pendingFlowerPick: pendingFlowerPick,
+            dailyQuote: dailyQuote,
+            completionQuote: completionQuote
+        )
     }
 
     var body: some View {
@@ -109,7 +78,7 @@ struct HomeView: View {
 
                     Spacer(minLength: 24)
 
-                    Text(displayMessage)
+                    Text(derivedState.displayMessage)
                         .font(.system(size: 32, weight: .bold, design: .rounded))
                         .foregroundStyle(.white)
                         .multilineTextAlignment(.center)
@@ -120,18 +89,18 @@ struct HomeView: View {
                         .padding(.bottom, 20)
 
                     HomeProgressRing(
-                        todayCompletedExercisesCount: todayCompletedExercises.count,
-                        totalExercises: currentExercises.count,
-                        currentChapter: currentChapter
+                        todayCompletedExercisesCount: derivedState.completedExercisesCount,
+                        totalExercises: derivedState.currentExercises.count,
+                        currentChapter: derivedState.currentChapter
                     )
 
                     Spacer()
 
                     HomeStepIndicator(
-                        exercises: currentExercises,
-                        todayCompletedExercises: todayCompletedExercises,
-                        nextExercise: nextExercise,
-                        isTodayComplete: isTodayComplete
+                        exercises: derivedState.currentExercises,
+                        todayCompletedExercises: derivedState.todayCompletedExercises,
+                        nextExercise: derivedState.nextExercise,
+                        isTodayComplete: derivedState.isTodayComplete
                     )
                     .padding(.horizontal, 32)
 
@@ -153,7 +122,7 @@ struct HomeView: View {
                 dailyQuote = quotes.motivational
                 completionQuote = quotes.completion
 
-                if isTodayComplete {
+                if derivedState.isTodayComplete {
                     NotificationManager.shared.cancelStreakReminder()
                 } else {
                     NotificationManager.shared.scheduleStreakReminder()
@@ -178,7 +147,7 @@ struct HomeView: View {
                     showSetPicker = false
                     if let exercise = pendingExercise {
                         let config = SessionConfig(
-                            chapter: currentChapter,
+                            chapter: derivedState.currentChapter,
                             exercise: exercise,
                             isBonus: isBonusPractice,
                             totalSets: selectedSets
@@ -192,7 +161,7 @@ struct HomeView: View {
             }
             .sheet(isPresented: $showExercisePicker) {
                 ExercisePickerSheet(
-                    exercises: currentExercises,
+                    exercises: derivedState.currentExercises,
                     onSelect: { exercise in
                         showExercisePicker = false
                         pendingExercise = exercise
@@ -201,7 +170,7 @@ struct HomeView: View {
                         }
                     }
                 )
-                .presentationDetents([.height(currentExercises.count > 3 ? 480 : 360)])
+                .presentationDetents([.height(derivedState.currentExercises.count > 3 ? 480 : 360)])
                 .presentationDragIndicator(.visible)
             }
             .alert("Camera Access Required", isPresented: $showCameraPermissionAlert) {
@@ -219,7 +188,8 @@ struct HomeView: View {
 
     private var startButton: some View {
         Group {
-            if pendingFlowerPick {
+            switch derivedState.primaryAction {
+            case .pickFlower:
                 Button {
                     showFlowerPicker = true
                 } label: {
@@ -242,7 +212,7 @@ struct HomeView: View {
                     )
                 }
                 .accessibilityLabel("Pick your flower reward")
-            } else if isTodayComplete {
+            case .bonusPractice:
                 VStack(spacing: 12) {
                     HStack(spacing: 8) {
                         Image(systemName: "checkmark.circle.fill")
@@ -273,27 +243,7 @@ struct HomeView: View {
                     }
                     .accessibilityLabel("Practice more exercises")
                 }
-            } else if let exercise = nextExercise {
-                let buttonText: String = {
-                    let completedCount = todayCompletedExercises.count
-
-                    if currentDifficulty == .basic {
-                        switch completedCount {
-                        case 0: return String(localized: "Wake Up Your Smile")
-                        case 1: return String(localized: "Keep the Flow")
-                        default: return String(localized: "Complete Your Day")
-                        }
-                    } else {
-                        switch completedCount {
-                        case 0: return String(localized: "Start Your Training")
-                        case 1: return String(localized: "Build the Momentum")
-                        case 2: return String(localized: "You're Warming Up")
-                        case 3: return String(localized: "Almost There")
-                        default: return String(localized: "One More to Go!")
-                        }
-                    }
-                }()
-
+            case let .startNextExercise(exercise, buttonText):
                 Button {
                     isBonusPractice = false
                     pendingExercise = exercise
@@ -315,6 +265,8 @@ struct HomeView: View {
                 }
                 .accessibilityLabel(buttonText)
                 .accessibilityHint(String(format: String(localized: "Start %@ exercise"), exercise.guide))
+            case .none:
+                EmptyView()
             }
         }
     }
