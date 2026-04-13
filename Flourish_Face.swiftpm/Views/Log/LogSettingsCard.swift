@@ -4,13 +4,6 @@ struct LogSettingsCard: View {
     @Environment(\.modelContext) private var modelContext
     @AppStorage(AppStorageKeys.selectedDifficulty) private var selectedDifficulty: String = Difficulty.basic.rawValue
     @AppStorage(AppStorageKeys.affectedSide) private var affectedSide: AffectedSide = .none
-    @AppStorage(AppStorageKeys.todayCompletedExercisesData) private var todayCompletedExercisesData: String = ""
-    @AppStorage(AppStorageKeys.lastExerciseDate) private var lastExerciseDate: String = ""
-    @AppStorage(AppStorageKeys.totalGrowthPoints) private var totalGrowthPoints: Double = 0
-    @AppStorage(AppStorageKeys.flowersEarned) private var flowersEarned: Int = 0
-    @AppStorage(AppStorageKeys.pendingFlowerPick) private var pendingFlowerPick: Bool = false
-    @AppStorage(AppStorageKeys.hasCompletedOnboarding) private var hasCompletedOnboarding: Bool = false
-    @AppStorage(AppStorageKeys.hasCompletedIntro) private var hasCompletedIntro: Bool = false
 
     @State private var showResetAlert = false
 
@@ -165,7 +158,7 @@ struct LogSettingsCard: View {
         )
         .alert("Reset All Data?", isPresented: $showResetAlert) {
             Button("Reset Everything", role: .destructive) {
-                resetAllData()
+                AppResetAction.perform(modelContext: modelContext)
             }
             Button("Cancel", role: .cancel) { }
         } message: {
@@ -209,23 +202,5 @@ struct LogSettingsCard: View {
         case .central: return String(localized: "Lower")
         case .none: return String(localized: "None")
         }
-    }
-
-    private func resetAllData() {
-        NotificationManager.shared.cancelAll()
-        todayCompletedExercisesData = ""
-        lastExerciseDate = ""
-        totalGrowthPoints = 0
-        flowersEarned = 0
-        pendingFlowerPick = false
-        hasCompletedOnboarding = false
-        hasCompletedIntro = false
-        affectedSide = .none
-        selectedDifficulty = Difficulty.basic.rawValue
-        try? modelContext.delete(model: Flower.self)
-
-        do {
-            try modelContext.delete(model: GrowthSession.self)
-        } catch { }
     }
 }
