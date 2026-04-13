@@ -4,16 +4,7 @@ import AVFoundation
 
 struct HomeView: View {
     @Binding var showFlowerPicker: Bool
-    @State private var navigationPath = NavigationPath()
-
-    @State private var showCameraPermissionAlert = false
-    @State private var pendingSessionConfig: SessionConfig?
-
-    @State private var showExercisePicker = false
-    @State private var isBonusPractice = false
-    @State private var showSetPicker = false
-    @State private var selectedSets: Int = 3
-    @State private var pendingExercise: FaceExercise?
+    @State private var launchFlow = HomeLaunchFlow()
 
     @State private var wavePhase: Double = 0
 
@@ -96,7 +87,7 @@ struct HomeView: View {
     }
 
     var body: some View {
-        NavigationStack(path: $navigationPath) {
+        NavigationStack(path: $launchFlow.navigationPath) {
             ZStack {
                 HomeBackgroundView(wavePhase: wavePhase)
 
@@ -143,7 +134,13 @@ struct HomeView: View {
             }
             .navigationBarHidden(true)
             .navigationDestination(for: SessionConfig.self) { config in
-                SessionView(chapter: config.chapter, exercise: config.exercise, isBonus: config.isBonus, totalSets: config.totalSets, navigationPath: $navigationPath)
+                SessionView(
+                    chapter: config.chapter,
+                    exercise: config.exercise,
+                    isBonus: config.isBonus,
+                    totalSets: config.totalSets,
+                    navigationPath: $launchFlow.navigationPath
+                )
             }
             .onAppear {
                 checkAndResetForNewDay()
@@ -163,7 +160,7 @@ struct HomeView: View {
                     showFlowerPicker = true
                 }
             }
-            .onChange(of: navigationPath) { _, newPath in
+            .onChange(of: launchFlow.navigationPath) { _, newPath in
                 if newPath.isEmpty {
                     checkAndResetForNewDay()
                     if pendingFlowerPick {
@@ -173,38 +170,31 @@ struct HomeView: View {
                     }
                 }
             }
-            .sheet(isPresented: $showSetPicker) {
-                SetPickerSheet(selectedSets: $selectedSets) {
-                    showSetPicker = false
-                    if let exercise = pendingExercise {
-                        let config = SessionConfig(
-                            chapter: currentChapter,
-                            exercise: exercise,
-                            isBonus: isBonusPractice,
-                            totalSets: selectedSets
-                        )
-                        requestCameraPermissionAndStart(config: config)
-                    }
-                }
-                .presentationDetents([.height(340)])
-                .presentationDragIndicator(.visible)
-                .presentationBackground(.ultraThinMaterial)
-            }
-            .sheet(isPresented: $showExercisePicker) {
-                ExercisePickerSheet(
-                    exercises: currentExercises,
-                    onSelect: { exercise in
-                        showExercisePicker = false
-                        pendingExercise = exercise
-                        DispatchQueue.main.asyncAfter(deadline: .now() + Delay.sheetTransition) {
-                            showSetPicker = true
+            .sheet(item: $launchFlow.activeSheet) { sheet in
+                switch sheet {
+                case .exercisePicker:
+                    ExercisePickerSheet(
+                        exercises: currentExercises,
+                        onSelect: { exercise in
+                            launchFlow.selectBonusExercise(exercise)
+                            DispatchQueue.main.asyncAfter(deadline: .now() + Delay.sheetTransition) {
+                                launchFlow.presentSetPicker()
+                            }
                         }
+                    )
+                    .presentationDetents([.height(currentExercises.count > 3 ? 480 : 360)])
+                    .presentationDragIndicator(.visible)
+
+                case .setPicker:
+                    SetPickerSheet(selectedSets: $launchFlow.selectedSets) {
+                        startPendingSession()
                     }
-                )
-                .presentationDetents([.height(currentExercises.count > 3 ? 480 : 360)])
-                .presentationDragIndicator(.visible)
+                    .presentationDetents([.height(340)])
+                    .presentationDragIndicator(.visible)
+                    .presentationBackground(.ultraThinMaterial)
+                }
             }
-            .alert("Camera Access Required", isPresented: $showCameraPermissionAlert) {
+            .alert("Camera Access Required", isPresented: $launchFlow.showCameraPermissionAlert) {
                 Button("Open Settings") {
                     if let settingsURL = URL(string: UIApplication.openSettingsURLString) {
                         UIApplication.shared.open(settingsURL)
@@ -254,8 +244,7 @@ struct HomeView: View {
                     .foregroundStyle(.white.opacity(0.6))
 
                     Button {
-                        isBonusPractice = true
-                        showExercisePicker = true
+                        launchFlow.startBonusPractice()
                     } label: {
                         HStack(spacing: 8) {
                             Image(systemName: "arrow.trianglehead.2.clockwise")
@@ -295,9 +284,7 @@ struct HomeView: View {
                 }()
 
                 Button {
-                    isBonusPractice = false
-                    pendingExercise = exercise
-                    showSetPicker = true
+                    launchFlow.startDailySession(for: exercise)
                 } label: {
                     HStack(spacing: 10) {
                         Text(buttonText)
@@ -327,27 +314,32 @@ struct HomeView: View {
         }
     }
 
-    private func requestCameraPermissionAndStart(config: SessionConfig) {
-        switch AVCaptureDevice.authorizationStatus(for: .video) {
-        case .authorized:
-            navigationPath.append(config)
+    private func startPendingSession() {
+        guard let action = launchFlow.prepareLaunch(
+            chapter: currentChapter,
+            cameraStatus: AVCaptureDevice.authorizationStatus(for: .video)
+        ) else {
+            return
+        }
 
-        case .notDetermined:
+        handleLaunchAction(action)
+    }
+
+    private func handleLaunchAction(_ action: HomeLaunchFlow.LaunchAction) {
+        switch action {
+        case .navigate(let config):
+            launchFlow.startSession(config)
+
+        case .requestCameraAccess(let config):
             AVCaptureDevice.requestAccess(for: .video) { granted in
                 DispatchQueue.main.async {
-                    if granted {
-                        navigationPath.append(config)
-                    } else {
-                        showCameraPermissionAlert = true
-                    }
+                    let nextAction = launchFlow.resolveCameraAccess(granted: granted, config: config)
+                    handleLaunchAction(nextAction)
                 }
             }
 
-        case .denied, .restricted:
-            showCameraPermissionAlert = true
-
-        @unknown default:
-            showCameraPermissionAlert = true
+        case .showPermissionAlert:
+            break
         }
     }
 
