@@ -10,7 +10,7 @@ struct SessionView: View {
 
     @Environment(\.modelContext) var modelContext
     @State var manager = FaceTrackingManager()
-    @State var showResult = false
+    @State var orchestrator = SessionOrchestrator()
 
     @AppStorage(AppStorageKeys.todayCompletedExercisesData) var todayCompletedExercisesData: String = ""
     @AppStorage(AppStorageKeys.lastExerciseDate) var lastExerciseDate: String = ""
@@ -28,8 +28,6 @@ struct SessionView: View {
         FaceExercise.exercises(for: currentDifficulty).count
     }
 
-    @State var phase: SessionPhase = .intro
-
     @State var introScale: CGFloat = 0
     @State var introTextOpacity: Double = 0
 
@@ -37,40 +35,27 @@ struct SessionView: View {
     @State var guideTextOpacity: Double = 0
     @State var pulseOpacity: Double = 0.4
 
-    @State var countdownValue: Int = TrackingConfig.countdownStart
-    @State var countdownScale: CGFloat = 1.0
-    @State var countdownOpacity: Double = 1.0
-
-    @State var finalGrowthPoints: Double = 0
-    @State var finalDuration: TimeInterval = 0
-    @State var completedExerciseCount: Int = 0
-    @State var isDayComplete: Bool = false
-    @State var isDismissing: Bool = false
-    @State var cameraWarmed: Bool = false
-    @State var showTrackingSkip: Bool = false
-    @State var countdownTimer: Timer?
-
     var body: some View {
         ZStack {
             phaseBackground
 
-            if phase == .guide || phase == .ready || phase == .tracking || phase == .setRest {
+            if orchestrator.phase == .guide || orchestrator.phase == .ready || orchestrator.phase == .tracking || orchestrator.phase == .setRest {
                 ARFaceView(
                     manager: manager,
                     chapter: chapter,
                     exercise: exercise,
-                    autoStart: cameraWarmed
+                    autoStart: orchestrator.cameraWarmed
                 )
                 .ignoresSafeArea()
 
-                if phase == .guide || phase == .ready || phase == .setRest {
+                if orchestrator.phase == .guide || orchestrator.phase == .ready || orchestrator.phase == .setRest {
                     Color.black
                         .ignoresSafeArea()
                         .transition(.opacity)
                 }
             }
 
-            switch phase {
+            switch orchestrator.phase {
             case .intro:
                 SessionIntroView(
                     exercise: exercise,
@@ -78,7 +63,9 @@ struct SessionView: View {
                     introScale: introScale,
                     introTextOpacity: introTextOpacity,
                     onStart: {
-                        withAnimation(.easeInOut(duration: 0.4)) { phase = .guide }
+                        withAnimation(.easeInOut(duration: 0.4)) {
+                            orchestrator.enterGuidePhase(manager: manager, exerciseGuide: exercise.guide)
+                        }
                     }
                 )
                 .transition(.opacity)
@@ -97,14 +84,9 @@ struct SessionView: View {
                 SessionTrackingView(
                     manager: manager,
                     exercise: exercise,
-                    showTrackingSkip: showTrackingSkip,
+                    showTrackingSkip: orchestrator.showTrackingSkip,
                     onSkipSet: { manager.setCompleted = true },
-                    onGoBack: {
-                        countdownTimer?.invalidate()
-                        countdownTimer = nil
-                        manager.stopTracking()
-                        navigationPath = NavigationPath()
-                    }
+                    onGoBack: dismissSession
                 )
                 .transition(.opacity)
             case .setRest:
@@ -115,15 +97,10 @@ struct SessionView: View {
                 .transition(.opacity)
             }
 
-            if phase != .tracking {
+            if orchestrator.phase != .tracking {
                 VStack {
                     HStack {
-                        Button {
-                            countdownTimer?.invalidate()
-                            countdownTimer = nil
-                            manager.stopTracking()
-                            navigationPath = NavigationPath()
-                        } label: {
+                        Button(action: dismissSession) {
                             Image(systemName: "xmark.circle.fill")
                                 .font(.title2)
                                 .foregroundStyle(.white.opacity(0.8))
@@ -138,7 +115,7 @@ struct SessionView: View {
                 }
             }
 
-            if isDismissing {
+            if orchestrator.isDismissing {
                 Color.black
                     .ignoresSafeArea()
                     .transition(.opacity)
@@ -150,75 +127,49 @@ struct SessionView: View {
         .onAppear {
             manager.setAffectedSide(affectedSide)
             manager.totalSets = totalSets
+            orchestrator.prepareForSession(manager: manager)
             startIntroPhase()
         }
-        .onChange(of: phase) { _, newPhase in
+        .onChange(of: orchestrator.phase) { _, newPhase in
             switch newPhase {
             case .guide:
                 startGuidePhase()
-            case .ready:
-                startCountdown()
-            case .tracking:
-                manager.isProcessingEnabled = true
-                showTrackingSkip = false
-                DispatchQueue.main.asyncAfter(deadline: .now() + Delay.flowerPicker) {
-                    UIAccessibility.post(notification: .announcement, argument: exercise.guide)
-                }
-                DispatchQueue.main.asyncAfter(deadline: .now() + Delay.skipButtonReveal) {
-                    if phase == .tracking && !manager.setCompleted {
-                        withAnimation(.easeInOut(duration: 0.3)) {
-                            showTrackingSkip = true
-                        }
-                    }
-                }
-            case .intro:
+            default:
                 break
-            case .setRest:
-                manager.isProcessingEnabled = false
-                startSetRest()
             }
         }
         .onChange(of: manager.setCompleted) { _, completed in
             if completed {
-                if manager.currentSet >= manager.totalSets {
-                    finalGrowthPoints = manager.totalGrowthAccumulated
-                    finalDuration = manager.elapsedTime
-
-                    saveSession()
-
-                    let completedSet = getCompletedExercisesFromAppStorage()
-                    completedExerciseCount = completedSet.count
-                    isDayComplete = completedExerciseCount >= requiredExerciseCount
-
-                    showResult = true
-                } else {
-                    withAnimation(.easeInOut(duration: 0.4)) {
-                        phase = .setRest
+                orchestrator.handleSetCompletion(
+                    manager: manager,
+                    requiredExerciseCount: requiredExerciseCount,
+                    exerciseGuide: exercise.guide,
+                    saveSession: saveSession,
+                    loadCompletedExerciseCount: {
+                        getCompletedExercisesFromAppStorage().count
                     }
-                }
+                )
             }
         }
-        .fullScreenCover(isPresented: $showResult) {
+        .onDisappear {
+            orchestrator.stop(manager: manager)
+        }
+        .fullScreenCover(
+            isPresented: Binding(
+                get: { orchestrator.showResult },
+                set: { orchestrator.showResult = $0 }
+            )
+        ) {
             RestView(
                 chapter: chapter,
                 exercise: exercise,
-                growthPoints: finalGrowthPoints,
-                duration: finalDuration,
-                completedExerciseCount: completedExerciseCount,
+                growthPoints: orchestrator.finalGrowthPoints,
+                duration: orchestrator.finalDuration,
+                completedExerciseCount: orchestrator.completedExerciseCount,
                 totalExercises: requiredExerciseCount,
-                isDayComplete: isDayComplete,
+                isDayComplete: orchestrator.isDayComplete,
                 isBonus: isBonus,
-                onDismiss: {
-                    withAnimation(.easeOut(duration: 0.2)) {
-                        isDismissing = true
-                    }
-                    DispatchQueue.main.asyncAfter(deadline: .now() + Delay.uiTransition) {
-                        showResult = false
-                        DispatchQueue.main.asyncAfter(deadline: .now() + Delay.navigationDismiss) {
-                            navigationPath = NavigationPath()
-                        }
-                    }
-                }
+                onDismiss: dismissResult
             )
         }
     }
