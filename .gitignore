@@ -1,6 +1,8 @@
 # Swift Package Manager
 .build/
 **/.build/
+.build-cache/
+**/.build-cache/
 
 # Xcode derived data & user state
 *.xcuserstate
@@ -16,3 +18,4 @@ xcuserdata/
 
 # macOS
 .DS_Store
+.omx/
