@@ -4,17 +4,6 @@ import Observation
 
 @Observable
 final class FaceTrackingManager: NSObject, ARSCNViewDelegate, ARSessionDelegate {
-    var browInnerUp: Float = 0
-    var browOuterUpLeft: Float = 0
-    var browOuterUpRight: Float = 0
-    var mouthSmileLeft: Float = 0
-    var mouthSmileRight: Float = 0
-    var jawOpen: Float = 0
-    var eyeBlinkLeft: Float = 0
-    var eyeBlinkRight: Float = 0
-    var mouthFrownLeft: Float = 0
-    var mouthFrownRight: Float = 0
-
     var growthRate: Double = 0.0
     var isTracking: Bool = false
 
@@ -39,6 +28,7 @@ final class FaceTrackingManager: NSObject, ARSCNViewDelegate, ARSessionDelegate 
     var elapsedTime: TimeInterval = 0
     var sessionStartTime: Date?
 
+    var signals = FaceTrackingSignals()
     var lastUpdateTime: Date?
     weak var sceneView: ARSCNView?
     var timer: Timer?
