@@ -4,6 +4,9 @@ import SwiftData
 struct AppRootView: View {
     @Environment(\.modelContext) private var modelContext
     @State private var shellState = AppRootShellState()
+    @AppStorage(AppStorageKeys.todayCompletedExercisesData) private var todayCompletedExercisesData: String = ""
+    @AppStorage(AppStorageKeys.lastExerciseDate) private var lastExerciseDate: String = ""
+    @AppStorage(AppStorageKeys.flowersEarned) private var flowersEarned: Int = 0
     @AppStorage(AppStorageKeys.pendingFlowerPick) private var pendingFlowerPick: Bool = false
     @AppStorage(AppStorageKeys.hasCompletedOnboarding) private var hasCompletedOnboarding: Bool = false
     @AppStorage(AppStorageKeys.hasCompletedIntro) private var hasCompletedIntro: Bool = false
@@ -58,17 +61,35 @@ struct AppRootView: View {
 
             if shellState.showFlowerPicker {
                 FlowerPickerView { selectedFlower in
+                    var progressState = dailyProgressState
                     shellState.claimFlowerReward(
                         selectedFlower,
-                        pendingFlowerPick: &pendingFlowerPick,
+                        dailyProgressState: &progressState,
                         modelContext: modelContext
                     )
+                    storeDailyProgressState(progressState)
                 }
                 .transition(.opacity)
             }
         }
         .onAppear {
-            shellState.syncPendingFlowerReward(pendingFlowerPick)
+            shellState.syncPendingFlowerReward(dailyProgressState.hasPendingFlowerReward)
         }
+    }
+
+    private var dailyProgressState: DailyProgressState {
+        DailyProgressState(
+            completedExercisesData: todayCompletedExercisesData,
+            lastExerciseDate: lastExerciseDate,
+            flowersEarned: flowersEarned,
+            pendingFlowerPick: pendingFlowerPick
+        )
+    }
+
+    private func storeDailyProgressState(_ state: DailyProgressState) {
+        todayCompletedExercisesData = state.completedExercisesData
+        lastExerciseDate = state.lastExerciseDate
+        flowersEarned = state.flowersEarned
+        pendingFlowerPick = state.pendingFlowerPick
     }
 }

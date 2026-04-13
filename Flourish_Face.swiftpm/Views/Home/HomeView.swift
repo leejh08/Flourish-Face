@@ -43,6 +43,27 @@ struct HomeView: View {
     @AppStorage(AppStorageKeys.affectedSide) private var affectedSide: AffectedSide = .none
     @AppStorage(AppStorageKeys.selectedDifficulty) private var selectedDifficulty: String = Difficulty.basic.rawValue
 
+    private var dailyProgressState: DailyProgressState {
+        DailyProgressState(
+            completedExercisesData: todayCompletedExercisesData,
+            lastExerciseDate: lastExerciseDate,
+            flowersEarned: flowersEarned,
+            pendingFlowerPick: pendingFlowerPick
+        )
+    }
+
+    private var derivedState: HomeDerivedState {
+        HomeDerivedState(
+            selectedDifficulty: selectedDifficulty,
+            totalGrowthPoints: totalGrowthPoints,
+            todayCompletedExercisesData: todayCompletedExercisesData,
+            lastExerciseDate: lastExerciseDate,
+            pendingFlowerPick: pendingFlowerPick,
+            dailyQuote: dailyQuote,
+            completionQuote: completionQuote
+        )
+    }
+
     var body: some View {
         NavigationStack(path: $launchFlow.navigationPath) {
             ZStack {
@@ -100,31 +121,16 @@ struct HomeView: View {
                 )
             }
             .onAppear {
-                checkAndResetForNewDay()
+                syncDailyProgressState()
                 startBackgroundAnimations()
 
                 let quotes = getQuotesForToday()
                 dailyQuote = quotes.motivational
                 completionQuote = quotes.completion
-
-                if derivedState.isTodayComplete {
-                    NotificationManager.shared.cancelStreakReminder()
-                } else {
-                    NotificationManager.shared.scheduleStreakReminder()
-                }
-
-                if pendingFlowerPick {
-                    showFlowerPicker = true
-                }
             }
             .onChange(of: launchFlow.navigationPath) { _, newPath in
                 if newPath.isEmpty {
-                    checkAndResetForNewDay()
-                    if pendingFlowerPick {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + Delay.flowerPicker) {
-                            showFlowerPicker = true
-                        }
-                    }
+                    syncDailyProgressState(presentPendingFlowerAfter: Delay.flowerPicker)
                 }
             }
             .sheet(item: $launchFlow.activeSheet) { sheet in
@@ -166,9 +172,10 @@ struct HomeView: View {
 
     private var startButton: some View {
         Group {
-            if pendingFlowerPick {
+            switch derivedState.primaryAction {
+            case .pickFlower:
                 Button {
-                    showFlowerPicker = true
+                    presentPendingFlowerPicker()
                 } label: {
                     HStack(spacing: 10) {
                         Text("🌸")
@@ -189,7 +196,7 @@ struct HomeView: View {
                     )
                 }
                 .accessibilityLabel("Pick your flower reward")
-            } else if derivedState.isTodayComplete {
+            case .bonusPractice:
                 VStack(spacing: 12) {
                     HStack(spacing: 8) {
                         Image(systemName: "checkmark.circle.fill")
@@ -219,7 +226,7 @@ struct HomeView: View {
                     }
                     .accessibilityLabel("Practice more exercises")
                 }
-            } else if case let .startNextExercise(exercise, buttonText) = derivedState.primaryAction {
+            case let .startNextExercise(exercise, buttonText):
                 Button {
                     launchFlow.startDailySession(for: exercise)
                 } label: {
@@ -239,6 +246,8 @@ struct HomeView: View {
                 }
                 .accessibilityLabel(buttonText)
                 .accessibilityHint(String(format: String(localized: "Start %@ exercise"), exercise.guide))
+            case .none:
+                EmptyView()
             }
         }
     }
@@ -266,7 +275,6 @@ struct HomeView: View {
         switch action {
         case .navigate(let config):
             launchFlow.startSession(config)
-
         case .requestCameraAccess(let config):
             AVCaptureDevice.requestAccess(for: .video) { granted in
                 DispatchQueue.main.async {
@@ -274,18 +282,45 @@ struct HomeView: View {
                     handleLaunchAction(nextAction)
                 }
             }
-
         case .showPermissionAlert:
             break
         }
     }
 
-    private func checkAndResetForNewDay() {
-        let todayString = AppStorageKeys.todayString()
-        if lastExerciseDate != todayString {
-            todayCompletedExercisesData = ""
-            lastExerciseDate = todayString
+    private func syncDailyProgressState(presentPendingFlowerAfter delay: TimeInterval? = nil) {
+        let state = dailyProgressState.normalizedForToday()
+        storeDailyProgressState(state)
+        apply(state.reminderPolicy(requiredExerciseCount: derivedState.currentExercises.count))
+
+        if state.hasPendingFlowerReward {
+            presentPendingFlowerPicker(after: delay)
         }
     }
 
+    private func storeDailyProgressState(_ state: DailyProgressState) {
+        todayCompletedExercisesData = state.completedExercisesData
+        lastExerciseDate = state.lastExerciseDate
+        flowersEarned = state.flowersEarned
+        pendingFlowerPick = state.pendingFlowerPick
+    }
+
+    private func presentPendingFlowerPicker(after delay: TimeInterval? = nil) {
+        guard let delay else {
+            showFlowerPicker = true
+            return
+        }
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+            showFlowerPicker = true
+        }
+    }
+
+    private func apply(_ reminderPolicy: DailyReminderPolicy) {
+        switch reminderPolicy {
+        case .schedule:
+            NotificationManager.shared.scheduleStreakReminder()
+        case .cancel:
+            NotificationManager.shared.cancelStreakReminder()
+        }
+    }
 }
