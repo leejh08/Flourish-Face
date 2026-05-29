@@ -146,6 +146,12 @@ struct LogSettingsCard: View {
                 RoundedRectangle(cornerRadius: 24)
                     .fill(.white.opacity(0.04))
             )
+
+            Text("This app is not a medical device and does not replace professional medical advice.")
+                .font(.system(size: 12, design: .rounded))
+                .foregroundStyle(.white.opacity(0.3))
+                .multilineTextAlignment(.center)
+                .padding(.horizontal, 4)
         }
         .padding(16)
         .background(
