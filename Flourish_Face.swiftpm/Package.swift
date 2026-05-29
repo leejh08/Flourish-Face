@@ -40,6 +40,23 @@ let package = Package(
         .executableTarget(
             name: "AppModule",
             path: ".",
+            exclude: ["VisionCore", "Tests"],
+            dependencies: ["VisionCore"],
+            swiftSettings: [
+                .swiftLanguageMode(.v5)
+            ]
+        ),
+        .target(
+            name: "VisionCore",
+            path: "VisionCore",
+            swiftSettings: [
+                .swiftLanguageMode(.v5)
+            ]
+        ),
+        .testTarget(
+            name: "VisionCoreTests",
+            dependencies: ["VisionCore"],
+            path: "Tests",
             swiftSettings: [
                 .swiftLanguageMode(.v5)
             ]
