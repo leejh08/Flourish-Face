@@ -9,7 +9,7 @@
 
 | ID | 작업 | 담당 | 상태 |
 |----|------|------|------|
-| B-01 | `PrivacyInfo.xcprivacy` 파일 추가 (2024년 5월 이후 App Store 필수 요건) | 🤖 | 대기 |
+| B-01 | `PrivacyInfo.xcprivacy` 파일 추가 (2024년 5월 이후 App Store 필수 요건) | 🤖 | ✅ 완료 |
 | B-02 | App Store Connect — 번들 ID `com.jh.Flourish-Face` 등록 | 👤 | 대기 |
 | B-03 | App Store Connect — 앱 레코드 생성 (이름, 카테고리: Health & Fitness) | 👤 | 대기 |
 | B-04 | 개인정보처리방침 URL 등록 (카메라 사용 앱 필수) | 👤 | 대기 |
@@ -54,12 +54,12 @@
 
 | ID | 작업 | 담당 | 상태 |
 |----|------|------|------|
-| L-01 | `SessionIntroView` — `"Hold each expression for 4 seconds"` → `TrackingConfig.holdRequired` 연동 | 🤖 | 대기 |
-| L-02 | `SessionTrackingView` — `scoreLabel` `"Hold it! Xs"` 로컬라이제이션 | 🤖 | 대기 |
-| L-03 | `RestView` 전체 — 하드코딩 영어 문자열 `Localizable.xcstrings` 이관 | 🤖 | 대기 |
-| L-04 | `HomeView` — Camera alert 문자열 로컬라이제이션 | 🤖 | 대기 |
-| L-05 | `RestView` — `"\(n) more to earn a flower"` 복수/단수 처리 | 🤖 | 대기 |
-| L-06 | 면책조항(disclaimer) 추가 — 의료기기 아님 명시 (온보딩 마지막 페이지 or 설정) | 🤖 | 대기 |
+| L-01 | `SessionIntroView` — `"Hold each expression for 4 seconds"` → `TrackingConfig.holdRequired` 연동 | 🤖 | ✅ 완료 |
+| L-02 | `SessionTrackingView` — `scoreLabel` `"Hold it! Xs"` 로컬라이제이션 | 🤖 | ✅ 완료 |
+| L-03 | `RestView` — 기존 `Text("literal")`은 이미 LocalizedStringKey. `"%lld more"` plural 항목 추가 | 🤖 | ✅ 완료 |
+| L-04 | `HomeView` — Camera alert 이미 xcstrings에 존재하며 Text()로 자동 로컬라이제이션 됨 | 🤖 | ✅ 완료 |
+| L-05 | `RestView` — `"\(n) more to earn a flower"` 복수/단수 처리 (xcstrings plural 추가) | 🤖 | ✅ 완료 |
+| L-06 | 면책조항(disclaimer) 추가 — LogSettingsCard 하단에 추가 | 🤖 | ✅ 완료 |
 
 ---
 
