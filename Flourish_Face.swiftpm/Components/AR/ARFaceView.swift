@@ -23,24 +23,36 @@ struct ARFaceView: UIViewRepresentable {
         Coordinator(manager: manager)
     }
 
-    func makeUIView(context: Context) -> ARSCNView {
-        let sceneView = ARSCNView()
-        sceneView.automaticallyUpdatesLighting = true
-        sceneView.clipsToBounds = true
-
-        if autoStart {
-            manager.startTracking(on: sceneView, chapter: chapter, exercise: exercise)
+    func makeUIView(context: Context) -> UIView {
+        if ARFaceView.isFaceTrackingSupported {
+            let sceneView = ARSCNView()
+            sceneView.automaticallyUpdatesLighting = true
+            sceneView.clipsToBounds = true
+            if autoStart {
+                manager.startTracking(on: sceneView, chapter: chapter, exercise: exercise)
+            }
+            return sceneView
+        } else {
+            let previewView = VisionPreviewView()
+            if autoStart {
+                manager.startVisionTracking(exercise: exercise)
+                previewView.captureSession = manager.visionTracker?.captureSession
+            }
+            return previewView
         }
-
-        return sceneView
     }
 
-    func updateUIView(_ uiView: ARSCNView, context: Context) {
+    func updateUIView(_ uiView: UIView, context: Context) {
         guard autoStart, !manager.isTracking else { return }
-        manager.startTracking(on: uiView, chapter: chapter, exercise: exercise)
+        if let sceneView = uiView as? ARSCNView {
+            manager.startTracking(on: sceneView, chapter: chapter, exercise: exercise)
+        } else if let previewView = uiView as? VisionPreviewView {
+            manager.startVisionTracking(exercise: exercise)
+            previewView.captureSession = manager.visionTracker?.captureSession
+        }
     }
 
-    static func dismantleUIView(_ uiView: ARSCNView, coordinator: Coordinator) {
+    static func dismantleUIView(_ uiView: UIView, coordinator: Coordinator) {
         coordinator.manager.stopTracking()
     }
 
