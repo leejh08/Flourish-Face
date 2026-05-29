@@ -28,7 +28,7 @@ struct SessionTrackingView: View {
 
     var body: some View {
         ZStack {
-            if ARFaceView.isFaceTrackingSupported {
+            if ARFaceView.isAnyFaceTrackingAvailable {
                 trackingOverlay
             } else {
                 unsupportedDeviceOverlay
@@ -152,11 +152,11 @@ struct SessionTrackingView: View {
                     .font(.system(size: 60))
                     .foregroundStyle(.white.opacity(0.6))
 
-                Text("Face Tracking Not Available")
+                Text("Camera Not Available")
                     .font(.system(size: 22, weight: .bold, design: .rounded))
                     .foregroundStyle(.white)
 
-                Text("This device doesn't support Face Tracking.\nPlease use an iPad with TrueDepth camera.")
+                Text("A front camera is required to use face exercises.")
                     .font(.system(.subheadline, design: .rounded))
                     .foregroundStyle(.white.opacity(0.7))
                     .multilineTextAlignment(.center)
