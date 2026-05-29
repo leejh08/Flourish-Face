@@ -10,14 +10,14 @@ final class NotificationManager {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) { _, _ in }
     }
 
-    // Call when app opens and today's exercises are NOT complete.
-    // Schedules a daily repeating 8 PM reminder (idempotent — safe to call multiple times).
+    
+    
     func scheduleStreakReminder() {
         let center = UNUserNotificationCenter.current()
         center.getNotificationSettings { settings in
             guard settings.authorizationStatus == .authorized else { return }
 
-            // Avoid duplicates
+            
             center.getPendingNotificationRequests { pending in
                 guard !pending.contains(where: { $0.identifier == self.reminderID }) else { return }
 
@@ -41,14 +41,14 @@ final class NotificationManager {
         }
     }
 
-    // Call when today's exercises are all complete.
-    // Cancels the pending reminder — it gets rescheduled next time the app opens on a new day.
+    
+    
     func cancelStreakReminder() {
         UNUserNotificationCenter.current()
             .removePendingNotificationRequests(withIdentifiers: [reminderID])
     }
 
-    // Call on full data reset.
+    
     func cancelAll() {
         cancelStreakReminder()
     }

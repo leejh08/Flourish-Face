@@ -22,9 +22,9 @@ public struct VisionBlendShapeCalculator {
         )
     }
 
-    // MARK: - Brow raise
-    // baseline.browToEyeRatio is the neutral distance.
-    // A rise of 80% above baseline saturates to 1.0.
+    
+    
+    
 
     func browInnerUp(_ g: VisionGeometry) -> Float {
         let avg = (g.leftBrowToEyeRatio + g.rightBrowToEyeRatio) / 2
@@ -45,8 +45,8 @@ public struct VisionBlendShapeCalculator {
         return clamp((ratio - base) / (base * 0.8))
     }
 
-    // MARK: - Eye blink
-    // EAR at baseline = open. EAR 0 = fully closed → blink = 1.
+    
+    
 
     func eyeBlinkLeft(_ g: VisionGeometry) -> Float {
         eyeBlink(ear: g.leftEyeAspectRatio)
@@ -62,15 +62,15 @@ public struct VisionBlendShapeCalculator {
         return clamp(1.0 - ear / base)
     }
 
-    // MARK: - Jaw open
-    // Increase in inner-lips gap beyond baseline, saturating at +0.15 face height.
+    
+    
 
     func jawOpen(_ g: VisionGeometry) -> Float {
         clamp((g.innerLipsOpenRatio - baseline.innerLipsOpenRatio) / 0.15)
     }
 
-    // MARK: - Smile
-    // Increase in mouth-corner displacement beyond baseline, saturating at +0.08 face width.
+    
+    
 
     func smileLeft(_ g: VisionGeometry) -> Float {
         clamp((g.leftMouthCornerDisplacement - baseline.mouthCornerDisplacement) / 0.08)
@@ -80,8 +80,8 @@ public struct VisionBlendShapeCalculator {
         clamp((g.rightMouthCornerDisplacement - baseline.mouthCornerDisplacement) / 0.08)
     }
 
-    // MARK: - Mouth frown
-    // Corner drop below lip midpoint beyond baseline, saturating at 0.06 face height.
+    
+    
 
     func mouthFrownLeft(_ g: VisionGeometry) -> Float {
         clamp((g.leftMouthCornerDrop - baseline.mouthCornerDropRatio) / 0.06)
@@ -91,7 +91,7 @@ public struct VisionBlendShapeCalculator {
         clamp((g.rightMouthCornerDrop - baseline.mouthCornerDropRatio) / 0.06)
     }
 
-    // MARK: - Utility
+    
 
     private func clamp(_ value: Double) -> Float {
         Float(max(0.0, min(1.0, value)))

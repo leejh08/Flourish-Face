@@ -1,7 +1,6 @@
 import UIKit
 import AVFoundation
 
-/// Camera preview layer for Vision-based face tracking on non-TrueDepth devices.
 final class VisionPreviewView: UIView {
     var captureSession: AVCaptureSession? {
         didSet { rebuildPreviewLayer() }

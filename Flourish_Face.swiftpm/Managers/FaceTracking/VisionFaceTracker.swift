@@ -4,7 +4,7 @@ import CoreGraphics
 import VisionCore
 
 final class VisionFaceTracker: NSObject {
-    /// Called on the main thread with each processed frame.
+    
     var onMeasurement: ((FaceTrackingSignalMeasurement, TimeInterval) -> Void)?
 
     private(set) var captureSession = AVCaptureSession()
@@ -28,7 +28,7 @@ final class VisionFaceTracker: NSObject {
         lastFrameTime = nil
     }
 
-    // MARK: - Setup
+    
 
     private func setupCaptureSession() {
         guard
@@ -48,8 +48,6 @@ final class VisionFaceTracker: NSObject {
     }
 }
 
-// MARK: - AVCaptureVideoDataOutputSampleBufferDelegate
-
 extension VisionFaceTracker: AVCaptureVideoDataOutputSampleBufferDelegate {
     func captureOutput(
         _ output: AVCaptureOutput,
@@ -62,7 +60,7 @@ extension VisionFaceTracker: AVCaptureVideoDataOutputSampleBufferDelegate {
         let dt = lastFrameTime.map { now.timeIntervalSince($0) } ?? TrackingConfig.frameFallbackInterval
         lastFrameTime = now
 
-        // Portrait front camera: raw pixel buffer is rotated 90° CCW and mirrored.
+        
         let handler = VNImageRequestHandler(cvPixelBuffer: pixelBuffer, orientation: .leftMirrored)
         let request = VNDetectFaceLandmarksRequest { [weak self] req, _ in
             self?.handleLandmarkResult(req, deltaTime: dt)
@@ -88,8 +86,6 @@ extension VisionFaceTracker: AVCaptureVideoDataOutputSampleBufferDelegate {
         }
     }
 }
-
-// MARK: - VisionLandmarks init from Vision types (AppModule adapter)
 
 extension VisionLandmarks {
     init?(from landmarks: VNFaceLandmarks2D, boundingBox: CGRect) {
@@ -120,8 +116,6 @@ extension VisionLandmarks {
         )
     }
 }
-
-// MARK: - FaceTrackingSignalMeasurement adapter
 
 extension FaceTrackingSignalMeasurement {
     init(from v: VisionMeasurement) {

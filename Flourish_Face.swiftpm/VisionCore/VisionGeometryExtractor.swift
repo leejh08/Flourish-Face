@@ -1,7 +1,5 @@
 import CoreGraphics
 
-/// Extracts VisionGeometry from raw Vision landmark points.
-/// All outputs are normalized by face bounding box dimensions.
 public enum VisionGeometryExtractor {
 
     public static func extract(from landmarks: VisionLandmarks) -> VisionGeometry {
@@ -25,9 +23,9 @@ public enum VisionGeometryExtractor {
         )
     }
 
-    // MARK: - Brow raise
-    // (eyebrow centroid Y − eye top Y) / faceHeight
-    // Vision Y-up: eyebrow has higher Y than eye top → positive value.
+    
+    
+    
 
     private static func browToEyeRatio(brow: [CGPoint], eye: [CGPoint], faceHeight: Double) -> Double {
         guard !brow.isEmpty, !eye.isEmpty, faceHeight > 0 else { return 0 }
@@ -36,9 +34,9 @@ public enum VisionGeometryExtractor {
         return (browCentroidY - eyeTopY) / faceHeight
     }
 
-    // MARK: - Eye aspect ratio
-    // EAR = eye height / eye width using bounding extremes.
-    // Simplified from full 6-point Soukupová formula; sufficient for blink detection.
+    
+    
+    
 
     private static func eyeAspectRatio(points: [CGPoint]) -> Double {
         guard points.count >= 2 else { return 0 }
@@ -50,10 +48,10 @@ public enum VisionGeometryExtractor {
         return height / width
     }
 
-    // MARK: - Smile (corner displacement from face center)
-    // Person's anatomical LEFT → higher X in front camera raw image.
-    // .left  → point with max X (person's left corner)
-    // .right → point with min X (person's right corner)
+    
+    
+    
+    
 
     private enum Side { case left, right }
 
@@ -67,8 +65,8 @@ public enum VisionGeometryExtractor {
         return abs(cornerX - centerX) / faceWidth
     }
 
-    // MARK: - Inner lips open ratio
-    // (top Y − bottom Y) / faceHeight. Y-up: top lip has higher Y.
+    
+    
 
     private static func innerLipsOpenRatio(points: [CGPoint], faceHeight: Double) -> Double {
         guard !points.isEmpty, faceHeight > 0 else { return 0 }
@@ -77,9 +75,9 @@ public enum VisionGeometryExtractor {
         return gap / faceHeight
     }
 
-    // MARK: - Mouth corner drop
-    // Positive when corner Y is below lip midpoint Y (frowning).
-    // Y-up: lower Y = further down → (midpoint Y − corner Y) > 0 when frowning.
+    
+    
+    
 
     private static func cornerDrop(lips: [CGPoint], side: Side, faceHeight: Double) -> Double {
         guard !lips.isEmpty, faceHeight > 0 else { return 0 }

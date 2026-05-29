@@ -19,7 +19,7 @@ struct ARFaceView: UIViewRepresentable {
         return ARFaceTrackingConfiguration.isSupported
     }
 
-    /// True when either ARKit TrueDepth or Vision (front camera) tracking is available.
+    
     static var isAnyFaceTrackingAvailable: Bool {
         isFaceTrackingSupported ||
         AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .front) != nil
