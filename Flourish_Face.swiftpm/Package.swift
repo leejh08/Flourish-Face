@@ -34,9 +34,9 @@ let package = Package(
     targets: [
         .executableTarget(
             name: "AppModule",
+            dependencies: ["VisionCore"],
             path: ".",
             exclude: ["VisionCore", "Tests"],
-            dependencies: ["VisionCore"],
             swiftSettings: [
                 .swiftLanguageMode(.v5)
             ]
