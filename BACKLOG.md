@@ -23,19 +23,19 @@
 
 | ID | 작업 | 담당 | 상태 |
 |----|------|------|------|
-| I-01 | `VisionFaceTracker.swift` — AVCaptureSession + VNDetectFaceLandmarksRequest 파이프라인 | 🤖 | 대기 |
-| I-02 | `VisionBlendShapeCalculator.swift` — 랜드마크 → pseudo-blend-shape 수학 모듈 | 🤖 | 대기 |
-| I-03 | `VisionCalibrationStore.swift` — 중립 얼굴 baseline AppStorage 저장/로드 | 🤖 | 대기 |
-| I-04 | `FaceTrackingManager` 수정 — `trackingMode` 분기 추가, Vision 콜백 연결 | 🤖 | 대기 |
-| I-05 | `FaceTrackingManager+VisionSession.swift` — startVisionTracking / stopVisionTracking | 🤖 | 대기 |
-| I-06 | `ARFaceView.swift` 수정 — TrueDepth 없을 때 VisionPreviewView 표시 | 🤖 | 대기 |
-| I-07 | `VisionPreviewView.swift` — AVCaptureVideoPreviewLayer UIViewRepresentable | 🤖 | 대기 |
+| I-01 | `VisionFaceTracker.swift` — AVCaptureSession + VNDetectFaceLandmarksRequest 파이프라인 | 🤖 | ✅ 완료 |
+| I-02 | `VisionBlendShapeCalculator.swift` — 랜드마크 → pseudo-blend-shape 수학 모듈 | 🤖 | ✅ 완료 |
+| I-03 | `VisionCalibrationStore.swift` — 중립 얼굴 baseline UserDefaults 저장/로드 | 🤖 | ✅ 완료 |
+| I-04 | `FaceTrackingManager` 수정 — `visionTracker` 프로퍼티 추가, stopTracking 통합 | 🤖 | ✅ 완료 |
+| I-05 | `FaceTrackingManager+VisionSession.swift` — startVisionTracking | 🤖 | ✅ 완료 |
+| I-06 | `ARFaceView.swift` 수정 — TrueDepth 없을 때 VisionPreviewView 표시 | 🤖 | ✅ 완료 |
+| I-07 | `VisionPreviewView.swift` — AVCaptureVideoPreviewLayer UIView 서브클래스 | 🤖 | ✅ 완료 |
 | I-08 | `SessionPhase.swift` — `.calibrate` 페이즈 추가 (Vision 전용) | 🤖 | 대기 |
 | I-09 | `SessionCalibrateView.swift` — 중립 얼굴 캘리브레이션 모드 추가 | 🤖 | 대기 |
 | I-10 | `SessionOrchestrator.swift` — Vision 모드 시 calibrate 페이즈 삽입 | 🤖 | 대기 |
 | I-11 | Vision 전용 sensitivity/threshold 튜닝 (`TrackingConfig` 분기) | 🤖 | 대기 |
-| I-12 | `unsupportedDeviceOverlay` 메시지 수정 ("iPad"만 언급 → 정확한 안내) | 🤖 | 대기 |
-| I-13 | iPhone 폼팩터 레이아웃 검토 및 수정 (홈, 세션, 로그 화면) | 🤖 | 대기 |
+| I-12 | `unsupportedDeviceOverlay` 메시지 수정 ("iPad"만 언급 → 정확한 안내) | 🤖 | ✅ 완료 |
+| I-13 | iPhone 폼팩터 레이아웃 검토 및 수정 (홈, 세션, 로그 화면) | 👤 | 대기 (실기기 필요) |
 
 ---
 
