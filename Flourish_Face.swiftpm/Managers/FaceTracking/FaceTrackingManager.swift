@@ -31,6 +31,7 @@ final class FaceTrackingManager: NSObject, ARSCNViewDelegate, ARSessionDelegate 
     var signals = FaceTrackingSignals()
     var lastUpdateTime: Date?
     weak var sceneView: ARSCNView?
+    var visionTracker: VisionFaceTracker?
     var timer: Timer?
     var cachedScreenWidth: CGFloat = 0
     var lastRenderTime: TimeInterval = 0

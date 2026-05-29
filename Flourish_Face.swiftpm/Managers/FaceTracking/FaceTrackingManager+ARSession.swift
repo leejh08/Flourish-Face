@@ -39,6 +39,8 @@ extension FaceTrackingManager {
         sceneView?.session.delegate = nil
         sceneView?.delegate = nil
         sceneView = nil
+        visionTracker?.stop()
+        visionTracker = nil
         isTracking = false
         timer?.invalidate()
         timer = nil
