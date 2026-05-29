@@ -17,7 +17,7 @@ struct SessionTrackingView: View {
 
     private var scoreLabel: String {
         if manager.holdProgress > 0 {
-            return "Hold it! \(String(format: "%.1f", manager.aboveThresholdDuration))s"
+            return String(format: String(localized: "Hold it! %.1fs"), manager.aboveThresholdDuration)
         }
         switch manager.growthRate {
         case 0..<0.3: return String(localized: "Keep going...")

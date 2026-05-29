@@ -1795,25 +1795,25 @@
         }
       }
     },
-    "Hold each expression for 4 seconds": {
-      "comment": "SessionIntroView / SetPickerSheet subtitle",
+    "Hold each expression for %lld seconds": {
+      "comment": "SessionIntroView: %lld is TrackingConfig.holdRequired as Int",
       "localizations": {
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "各表情を4秒間維持してください"
+            "value": "各表情を%lld秒間維持してください"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "각 표정을 4초간 유지하세요"
+            "value": "각 표정을 %lld초간 유지하세요"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "每个表情保持4秒"
+            "value": "每个表情保持%lld秒"
           }
         }
       }
@@ -4436,6 +4436,93 @@
           "stringUnit": {
             "state": "translated",
             "value": "下一个"
+          }
+        }
+      }
+    },
+    "Hold it! %.1fs": {
+      "comment": "SessionTrackingView: hold duration counter while above threshold",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "キープ！%.1f秒"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "유지하세요! %.1f초"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保持！%.1f秒"
+          }
+        }
+      }
+    },
+    "%lld more to earn a flower": {
+      "comment": "RestView: remaining exercises before earning a flower reward",
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "1 more to earn a flower"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld more to earn a flower"
+                }
+              }
+            }
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "あと%lld個で花を獲得"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld개 더 완료하면 꽃을 받아요"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "再完成%lld个获得花朵"
+          }
+        }
+      }
+    },
+    "This app is not a medical device and does not replace professional medical advice.": {
+      "comment": "Medical disclaimer shown in Settings",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このアプリは医療機器ではなく、専門家の医療アドバイスに代わるものではありません。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 앱은 의료기기가 아니며 전문 의료 조언을 대체하지 않습니다."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本应用不是医疗器械，不能替代专业医疗建议。"
           }
         }
       }

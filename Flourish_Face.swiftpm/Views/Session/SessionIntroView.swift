@@ -21,7 +21,7 @@ struct SessionIntroView: View {
                         .font(.system(size: 48, weight: .bold, design: .rounded))
                         .foregroundStyle(.white)
 
-                    Text("Hold each expression for 4 seconds")
+                    Text("Hold each expression for \(Int(TrackingConfig.holdRequired)) seconds")
                         .font(.system(.subheadline, design: .rounded))
                         .foregroundStyle(.white.opacity(0.6))
                 }
